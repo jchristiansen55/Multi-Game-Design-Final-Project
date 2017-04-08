@@ -6,9 +6,13 @@ Prepare This Readme.
 //TODO
 
 * Decide on the Idea.
+	Creature based MOBA 
 * Decide on the target platform(Mac/Android/IOS,etc).
+	Desktop - including multiplayer
 * Discuss weekly scrum meeting times outside of class times. Can be remote meetings, but in-person meetings are highly recommended.
+        We will have weekly discord and in class meetings 
 * Decide who is going to be the manager for the Git Repo. 
+	Jesse Christiansen will be the manager
 * Write out the various milestones below in the following format "Requirement - person responsible."
 * Example: "Prepare health manager and mechanism for all relevant players to have a health component - Omar" 
 * Make sure you discuss the idea and milestones with me on the first day, or anytime you decide to pivot your project.
@@ -21,41 +25,72 @@ Prepare This Readme.
 
 
 //TODO
-
-
+	1) Map created
+	2) Basic Mechanics created - Fixed Camra offset - 
+	3) Import - design - code first playable creature 
+		* use base model (import model of spinosaurus, our first creature) 
+		* each character will have 3 abilities and an ultimate
+		
+	4) Create unit manager 
+	5) Create Living map (turrets, minions, inhibitor mechanic, nexus, neutral camps ) 
+	6) impassable terrain 
+	7) fog of war 
+	8) Create / Design 5 other characters 
+	9) create menu / character selection screen 
+	10) create UI for in game ( stats, spells, spell cd's, mini map, health bars)
+	11) Wave Management 
+	12) Polish all placeholder art 
+	13) Home Screen - also victory and defeat screens 
+	14) multiplayer / match making will discuss more next meeting if this is a goal... maybe turn into hoard defense game ( single player ) 
+	15) trailer 
+	16) publish
+	
 
 ##Due 04/15:
-//TODO
+1) Map created
+	2) Basic Mechanics created - Fixed Camra offset - 
+	3) Import - design - code first playable creature 
+		* use base model (import model of spinosaurus, our first creature) 
+		* each character will have 3 abilities and an ultimate
 ###Scrum meeting notes:
 //TODO
 
 ---
 ##Due 04/22:
-//TODO
+	4) Create unit manager 
+	5) Create Living map (turrets, minions, inhibitor mechanic, nexus, neutral camps ) 
+	6) impassable terrain
+	7) fog of war
 ###Scrum meeting notes:
 //TODO
 
 ---
 ##Due 04/29:
-//TODO
+	8) Create / Design 5 other characters 
+	
 ###Scrum meeting notes:
 //TODO
 
 ---
 ##Due 05/06:
-//TODO
+	9) create menu / character selection screen 
+	10) create UI for in game ( stats, spells, spell cd's, mini map, health bars)
+	11) Wave Management 
 ###Scrum meeting notes:
 //TODO
 
 ---
 ##Due 05/13:
-//TODO
+	12) Polish all placeholder art 
+	13) Home Screen - also victory and defeat screens 
 ###Scrum meeting notes:
 //TODO
 
 ---
 ##Due 05/20:DEMO DAY
-//TODO
+14) multiplayer / match making will discuss more next meeting if this is a goal... maybe turn into hoard defense game ( single player )
+15) trailer 
+16) publish
 ###Scrum meeting notes:
 //TODO
 
