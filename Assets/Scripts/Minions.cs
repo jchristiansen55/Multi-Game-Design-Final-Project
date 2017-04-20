@@ -4,13 +4,32 @@ using UnityEngine;
 
 public class Minions : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public static int health;
+    public static int level; //To Scale up overtime
+    public static int autoAttack;
+    public static int attackSpeed;
+    public static int expWorth; //exp awarded when killed to scale with level for catch up mechanic?
+    public static int goldWorth;
+
+    public int startHealth = 35;
+    public int startAA = 7;
+
+    // Use this for initialization
+    void Start ()
+    {
+        health = startHealth;
+        level = 1;
+        goldWorth = 20;
+        autoAttack = startAA;
+    }
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void Update ()
+    {
+        if (health == 0)
+        {
+            //Maybe if statement to give specific champ gold for last hit?
+            //Death
+        }
+    }
 }
