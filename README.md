@@ -47,25 +47,47 @@ Prepare This Readme.
 	
 
 ##Due 04/15:
-1) Map created
+	
 	2) Basic Mechanics created - Fixed Camra offset - 
 	3) Import - design - code first playable creature 
 		* use base model (import model of spinosaurus, our first creature) 
 		* each character will have 3 abilities and an ultimate
 ###Scrum meeting notes:
 //TODO
+	1) Map created
+	2) added a basic offset
+	3) create on playable character (done, using placeholder)
+
+Basic design for first character created.
+Gameplay based design sorted out(paper)
+Mechanics discussed
+Featured wanted added
+features too advanced created
+List of luxury features too
 
 ---
 ##Due 04/22:
+	4) Create units  
+	5) Created  map (turrets, minions, inhibitor mechanic, nexus, neutral camps ) 
+	6) impassable terrain
+	7) created dirth paths for lanes
+	8) created scripts
+	9) imported 3 other playable archetypes
+	
+	
+###Scrum meeting notes:
+//TODO
+	Finish and design first custom character with effects
+	change camera from WASD to click to move
+	
+
+---
+##Due 04/29:
+	7) fog of war
 	4) Create unit manager 
 	5) Create Living map (turrets, minions, inhibitor mechanic, nexus, neutral camps ) 
 	6) impassable terrain
 	7) fog of war
-###Scrum meeting notes:
-//TODO
-
----
-##Due 04/29:
 	8) Create / Design 5 other characters 
 	
 ###Scrum meeting notes:
