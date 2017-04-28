@@ -7,6 +7,8 @@ public class GameManager : Photon.MonoBehaviour {
 	public GameObject[] redSpawn;
 	public GameObject[] blueSpawn;
 
+	public GameObject lobbyCam; 
+
 	public int state = 0;
 
 	void Connect(){
@@ -61,6 +63,12 @@ public class GameManager : Photon.MonoBehaviour {
 	}
 		void Spawn(int team, string challenger){
 			state = 3; 
-			Debug.Log("Team ... " + team + " Playing as " + challenger);
-		}
+				lobbyCam.SetActive (false);
+		GameObject userSpawn = redSpawn [Random.Range (0, redSpawn.Length)];
+		GameObject userPlayer = PhotonNetwork.Instantiate (challenger, userSpawn.transform.position, userSpawn.transform.rotation, 0);
+
+		userPlayer.GetComponent<Camera> ().enabled = true;
+
+
+	}
 }
