@@ -91,8 +91,19 @@ List of luxury features too
 	8) Create / Design 5 other characters 
 	
 ###Scrum meeting notes:
-//TODO
+Better looking map
+New Buildings added
+New textures and other environmental added
+Multiplayer connection spawn now works
+2 other character models imported
+added minion spawning with models
+minion movement through lane
 
+//TODO
+switch base model to custom created model
+add hp bars
+add scaling waves
+change wasd to click to move
 ---
 ##Due 05/06:
 	9) create menu / character selection screen 
