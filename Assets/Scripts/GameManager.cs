@@ -52,8 +52,8 @@ public class GameManager : Photon.MonoBehaviour {
 		case 2: 
 			//Champ Select
 			GUI.Label (new Rect (10, 40, 200, 30), "Select Challenger");
-			if (GUI.Button (new Rect (70, 10, 100, 30), "MagePlaceHolder")) {
-				Spawn (0, "MagePlaceHolder");
+			if (GUI.Button (new Rect (70, 10, 100, 30), "Cube")) {
+				Spawn (0, "Player Test");
 			}
 			break;
 				case 3: 
@@ -68,6 +68,7 @@ public class GameManager : Photon.MonoBehaviour {
 		GameObject userPlayer = PhotonNetwork.Instantiate (challenger, userSpawn.transform.position, userSpawn.transform.rotation, 0);
 
 		userPlayer.GetComponent<Camera> ().enabled = true;
+
 
 
 	}
