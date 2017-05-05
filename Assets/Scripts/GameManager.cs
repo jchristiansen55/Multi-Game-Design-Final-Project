@@ -53,7 +53,7 @@ public class GameManager : Photon.MonoBehaviour {
 			//Champ Select
 			GUI.Label (new Rect (10, 40, 200, 30), "Select Challenger");
 			if (GUI.Button (new Rect (70, 10, 100, 30), "Cube")) {
-				Spawn (0, "Player Test");
+				Spawn (0, "PlayerTest");
 			}
 			break;
 				case 3: 

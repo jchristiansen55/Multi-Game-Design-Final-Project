@@ -16,7 +16,7 @@ public class SendInfo : MonoBehaviour {
 			RaycastHit hit;
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 
-			if (Physics.Raycast (ray, out hit) && hit.transform.tag == "terrain") {
+			if (Physics.Raycast (ray, out hit) && hit.transform.tag == "Ground") {
 				this.GetComponent<PhotonView> ().RPC ("RecievedMove", PhotonTargets.All, hit.point);
 			}
 		}
