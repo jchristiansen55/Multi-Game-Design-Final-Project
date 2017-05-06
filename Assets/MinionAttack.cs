@@ -47,7 +47,7 @@ public class MinionAttack : MonoBehaviour
         {
             target = nearestEnemy.transform;
             walk = false;
-            //targetEnemy = nearestEnemy.GetComponent<Enemy>();
+            
         }
         else
         {
