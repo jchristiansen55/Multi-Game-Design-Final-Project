@@ -8,11 +8,11 @@ public class MinionMovementREDRightLane : MonoBehaviour
     public float speed = 10f;
 
     private Transform target;
-    private int wavepointIndex = 2;
+    private int wavepointIndex = 3;
 
     void Start()
     {
-        target = Waypoints.points[2];
+        target = Waypoints.points[3];
     }
 
     void Update()
