@@ -110,7 +110,23 @@ change wasd to click to move
 	10) create UI for in game ( stats, spells, spell cd's, mini map, health bars)
 	11) Wave Management 
 ###Scrum meeting notes:
+Created hp bars
+Created nexus hp
+created turret hp
+Created turret scripts
+created minion scripts
+created game economy
+created click to movement
+created hp to nexus minions and 
+started collision turret detection
+
 //TODO
+connect all the scripts to interact
+attack animations
+ui
+gold
+player auto attacks
+player abilities
 
 ---
 ##Due 05/13:
