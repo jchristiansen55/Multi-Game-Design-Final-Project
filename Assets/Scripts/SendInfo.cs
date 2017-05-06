@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class SendInfo : MonoBehaviour {
 
+public class SendInfo : MonoBehaviour {
 
 	void Start () {
 		
@@ -18,6 +18,7 @@ public class SendInfo : MonoBehaviour {
 
 			if (Physics.Raycast (ray, out hit) && hit.transform.tag == "Ground") {
 				this.GetComponent<PhotonView> ().RPC ("RecievedMove", PhotonTargets.All, hit.point);
+
 			}
 		}
 	}
