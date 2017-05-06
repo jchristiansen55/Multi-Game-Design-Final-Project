@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Minions : MonoBehaviour {
 
-    public static int health;
+    public static float health;
     public static int level; //To Scale up overtime
     public static int autoAttack;
     public static int attackSpeed;
@@ -22,14 +22,28 @@ public class Minions : MonoBehaviour {
         goldWorth = 20;
         autoAttack = startAA;
     }
-	
-	// Update is called once per frame
-	void Update ()
+    public void TakeDamage(float amount)
     {
-        if (health == 0)
+        Debug.Log(health + "?");
+        health -= amount;
+        Debug.Log(health + "hi");
+
+        if (health <= 0)
         {
-            //Maybe if statement to give specific champ gold for last hit?
-            //Death
+            Die();
+            Debug.Log(health);
+            //PlayerStats.Money += 10;
         }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
+    }
+
+    // Update is called once per frame
+    void Update ()
+    {
+
     }
 }
