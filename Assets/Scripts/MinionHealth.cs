@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MinionHealth : MonoBehaviour {
-
+    
     public float TotalHp;
     public float CurrentHp;
 
@@ -12,14 +12,15 @@ public class MinionHealth : MonoBehaviour {
         CurrentHp = TotalHp;
 
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
-		if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             TakeDamage();
         }
+        
 	}
     void TakeDamage()
     {

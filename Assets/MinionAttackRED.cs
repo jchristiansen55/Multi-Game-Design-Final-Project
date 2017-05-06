@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MinionAttack : MonoBehaviour
+public class MinionAttackRED : MonoBehaviour
 {
 
     public Transform target;
@@ -10,22 +10,22 @@ public class MinionAttack : MonoBehaviour
     public float speed = 10f;
 
     private Transform wayp;
-    private int wavepointIndex = 0;
+    private int wavepointIndex = 2;
     public float range = 15f;
 
     public bool walk;
-    
+
     //public GameObject bulletPrefab;
     //public float fireRate = 1f;
     //private float fireCountdown = 0f;
 
-    public string enemyTag = "Red";
+    public string enemyTag = "Blue";
 
     // Use this for initialization
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
-        wayp = Waypoints.points[0];
+        wayp = Waypoints.points[2];
     }
 
     void UpdateTarget()
@@ -59,8 +59,9 @@ public class MinionAttack : MonoBehaviour
     void Update()
     {
         // if (GetComponent.
-        if (walk) {
-               Vector3 dir = wayp.position - transform.position;
+        if (walk)
+        {
+            Vector3 dir = wayp.position - transform.position;
             transform.Translate(dir.normalized * speed * Time.deltaTime);
         }
     }
