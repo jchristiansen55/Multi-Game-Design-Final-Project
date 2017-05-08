@@ -69,10 +69,5 @@ public class GameManager : Photon.MonoBehaviour {
 				lobbyCam.SetActive (false);
 		GameObject userSpawn = redSpawn [Random.Range (0, redSpawn.Length)];
 		GameObject userPlayer = PhotonNetwork.Instantiate (challenger, userSpawn.transform.position, userSpawn.transform.rotation, 0);
-
-		userPlayer.GetComponent<Camera> ().enabled = true;
-
-
-
 	}
 }
