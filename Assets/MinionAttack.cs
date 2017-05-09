@@ -10,7 +10,7 @@ public class MinionAttack : MonoBehaviour
     public float speed = 10f;
 
     private Transform wayp;
-    private int wavepointIndex = 0;
+    public int wavepointIndex = 0;
     public float aggroRange = 30f;
     public float range = 10f;
 
@@ -28,7 +28,7 @@ public class MinionAttack : MonoBehaviour
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
-        wayp = Waypoints.points[0];
+        wayp = Waypoints.points[wavepointIndex];
     }
 
     void UpdateTarget()
@@ -77,7 +77,7 @@ public class MinionAttack : MonoBehaviour
             if (fireCountdown <= 0)
             {
                 Shoot();
-                fireCountdown = 1f / fireRate;
+                fireCountdown = 10f / fireRate;
             }
             fireCountdown -= Time.deltaTime;
         }

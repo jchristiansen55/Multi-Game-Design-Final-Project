@@ -10,7 +10,7 @@ public class MinionAttackRED : MonoBehaviour
     public float speed = 10f;
 
     private Transform wayp;
-    private int wavepointIndex = 2;
+    public int wavepointIndex = 2;
     public float aggroRange = 30f;
     public float range = 15f;
 
@@ -28,7 +28,7 @@ public class MinionAttackRED : MonoBehaviour
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
-        wayp = Waypoints.points[2];
+        wayp = Waypoints.points[wavepointIndex];
     }
 
     void UpdateTarget()
