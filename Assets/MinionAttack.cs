@@ -5,19 +5,22 @@ public class MinionAttack : MonoBehaviour
 {
 
     public Transform target;
-
+	private Minions targetEnemy;
 
     public float speed = 10f;
 
     private Transform wayp;
     private int wavepointIndex = 0;
-    public float range = 15f;
+    public float aggroRange = 30f;
+    public float range = 10f;
 
     public bool walk;
-    
+    public bool kill = false;
+
     //public GameObject bulletPrefab;
-    //public float fireRate = 1f;
-    //private float fireCountdown = 0f;
+    public float damage = 10f;
+    public float fireRate = 1f;
+    private float fireCountdown = 0f;
 
     public string enemyTag = "Red";
 
@@ -47,12 +50,18 @@ public class MinionAttack : MonoBehaviour
         {
             target = nearestEnemy.transform;
             walk = false;
-            
+            targetEnemy = nearestEnemy.GetComponent<Minions>();
+            kill = true;
+            while (shortestDistance >= range)
+            {
+                
+            }
         }
         else
         {
             target = null;
             walk = true;
+            kill = false;
         }
     }
 
@@ -60,10 +69,27 @@ public class MinionAttack : MonoBehaviour
     {
         // if (GetComponent.
         if (walk) {
-               Vector3 dir = wayp.position - transform.position;
+            Vector3 dir = wayp.position - transform.position;
             transform.Translate(dir.normalized * speed * Time.deltaTime);
         }
+        if (kill)
+        {
+            if (fireCountdown <= 0)
+            {
+                Shoot();
+                fireCountdown = 1f / fireRate;
+            }
+            fireCountdown -= Time.deltaTime;
+        }
+
     }
+    
+    void Shoot ()
+    {
+        targetEnemy.TakeDamage(damage);
+        Debug.Log("DMG'D MINION");
+    }
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
