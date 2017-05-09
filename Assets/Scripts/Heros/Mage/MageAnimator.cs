@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MageAnimator : MonoBehaviour {
 	public GameObject RM;
-	float charFreezeCD = 0;
+
 	bool isTrue;
 
 	Animator m_animator; 
@@ -11,7 +11,7 @@ public class MageAnimator : MonoBehaviour {
 
 	void Start () {
 		m_animator = GetComponent<Animator> ();
-		charFreezeCD = 4;
+	
 	}
 	
 
@@ -23,10 +23,6 @@ public class MageAnimator : MonoBehaviour {
 		//Q animation 
 		m_animator.SetBool ("CastingQ", RM.GetComponent<MageAbility1> ().animationQ);
 		if (RM.GetComponent<MageAbility1> ().animationQ == true) {
-			charFreezeCD -= Time.deltaTime;
-			if (charFreezeCD <= 0) {
-					Debug.Log("hi");
-			}
 			RM.GetComponent<MageAbility1> ().animationQ = false; 
 		}
 	}
