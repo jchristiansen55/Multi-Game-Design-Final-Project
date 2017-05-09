@@ -5,15 +5,21 @@ public class MageAbility1 : MonoBehaviour {
 
 	public GameObject ability;
 	public GameObject Firepoint;
+
 	public Texture2D ab1;
 	public Texture2D ab1CD;
+
+	public bool animationQ = false; 
+
 	public float  ab1CDTime;
+	public float charFreezeCD = 0;
 
     float ab1Timer = 0;
 
 	void OnGUI(){
-		
+
 		ab1Timer -= Time.deltaTime;
+		charFreezeCD -= Time.deltaTime;
 	
 
 		bool ab1Key = Input.GetKeyDown (KeyCode.Q);
@@ -21,14 +27,18 @@ public class MageAbility1 : MonoBehaviour {
 			GUI.Label (new Rect (10, 10, 50, 50), ab1);
 			if (ab1Key) {
 				AbilityOne ();
+				animationQ = true;
 			}
 		} else {
 			GUI.Label (new Rect (10, 10, 50, 50), ab1CD);
 		}
+	}	
 
-	}
 	void AbilityOne(){
-		Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
-		ab1Timer = ab1CDTime;
+	
+			Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
+	
+			ab1Timer = ab1CDTime;
+			charFreezeCD = 8;
 	}
 }

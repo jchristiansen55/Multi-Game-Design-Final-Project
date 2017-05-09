@@ -3,6 +3,7 @@ using UnityEngine;
 
 
 public class SendInfo : MonoBehaviour {
+	public bool whileRunning = false;
 	void Start () {
 		
 	}
