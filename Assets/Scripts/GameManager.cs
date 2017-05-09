@@ -58,6 +58,9 @@ public class GameManager : Photon.MonoBehaviour {
 			if (GUI.Button (new Rect (180, 10, 100, 30), "Yasuo")) {
 				Spawn (0, "Yasuo");
 			}
+			if (GUI.Button (new Rect (350, 10, 100, 30), "Mage")) {
+				Spawn (0, "Mage");
+			}
 			break;
 				case 3: 
 				// IN GAME

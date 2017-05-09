@@ -3,7 +3,6 @@ using UnityEngine;
 
 
 public class SendInfo : MonoBehaviour {
-	public GameObject samurai;
 	void Start () {
 		
 	}
@@ -17,8 +16,8 @@ public class SendInfo : MonoBehaviour {
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 
 			if (Physics.Raycast (ray, out hit) && hit.transform.tag == "Ground") {
-				this.GetComponent<PhotonView> ().RPC ("RecievedMove", PhotonTargets.All, hit.point);
-				samurai.GetComponent<Animation>().Play("Run");
+			this.GetComponent<PhotonView> ().RPC ("RecievedMove", PhotonTargets.All, hit.point);
+
 			}
 		}
 	} 

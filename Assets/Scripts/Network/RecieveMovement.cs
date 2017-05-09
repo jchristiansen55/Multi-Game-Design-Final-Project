@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class RecieveMovement: MonoBehaviour {
 
-	Vector3 newposition; 
+	public Vector3 newposition; 
+	public Vector3 movPosition;
 	public float speed;
 	public float walkRange;
+
 
 	public GameObject graphics;
 
@@ -25,5 +27,6 @@ public class RecieveMovement: MonoBehaviour {
 	[PunRPC]
 	public void RecievedMove(Vector3 movePos){
 		newposition = movePos;
+		movPosition = movePos;
 	}
 }
