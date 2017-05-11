@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TurretAttacks : MonoBehaviour
+public class TurretAttacksRed : MonoBehaviour
 {
 
     public Transform target;
@@ -9,12 +9,12 @@ public class TurretAttacks : MonoBehaviour
 
     public float speed = 10f;
 
-    
-    
-    public float aggroRange = 40f;
-    public float range = 20;
 
-    
+
+    public float aggroRange = 30f;
+    public float range = 10f;
+
+
     public bool kill = false;
 
     //public GameObject bulletPrefab;
@@ -22,13 +22,13 @@ public class TurretAttacks : MonoBehaviour
     public float fireRate = 1f;
     private float fireCountdown = 0f;
 
-    public string enemyTag = "Blue";
+    public string enemyTag = "Red";
 
     // Use this for initialization
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
-        
+
     }
 
     void UpdateTarget()
@@ -49,7 +49,7 @@ public class TurretAttacks : MonoBehaviour
         if (nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
-            
+
             targetEnemy = nearestEnemy.GetComponent<Turrets>();
             kill = true;
             while (shortestDistance >= range)
@@ -60,7 +60,7 @@ public class TurretAttacks : MonoBehaviour
         else
         {
             target = null;
-            
+
             kill = false;
         }
     }
@@ -68,7 +68,7 @@ public class TurretAttacks : MonoBehaviour
     void Update()
     {
         // if (GetComponent.
-        
+
         if (kill)
         {
             if (fireCountdown <= 0)
