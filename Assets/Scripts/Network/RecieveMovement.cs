@@ -19,7 +19,10 @@ public class RecieveMovement: MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if (GetComponent<MageAbility1> ().charFreezeCD <= 0){
+		if ((GetComponent<MageAbility1> ().charFreezeCD <= 0)&&
+			(GetComponent<MageAutoAttack>().charFreezeCD <= 0)&&
+			(GetComponent<MageAbility2>().charFreezeCD <=0))
+		{
 		if (Vector3.Distance (newposition, this.transform.position) > walkRange) {
 			this.transform.position = Vector3.MoveTowards (this.transform.position, newposition, speed * Time.deltaTime); 
 			Quaternion transRot = Quaternion.LookRotation (newposition - this.transform.position, Vector3.up);
