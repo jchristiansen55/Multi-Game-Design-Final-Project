@@ -1,31 +1,49 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Turrets : MonoBehaviour {
+public class Turrets : MonoBehaviour
+{
 
-    public static int health;
-    public static int autoAttack;
-    public static int attackSpeed;
-    public static bool active;
+    public static float currentHealth;
+    public static int level; //To Scale up overtime
+    public static int expWorth; //exp awarded when killed to scale with level for catch up mechanic?
+    public static int goldWorth;
 
-    public int startAA = 15;
+    public Image healthBar;
+
+    public int startHealth = 350;
 
     // Use this for initialization
     void Start()
     {
-        health = 750;
-        active = false;
-        autoAttack = startAA;
+        currentHealth = startHealth;
+        level = 1;
+        goldWorth = 20;
+    }
+    public void TakeDamage(float amount)
+    {
+        Debug.Log(currentHealth + "?");
+        currentHealth -= amount;
+
+        if (currentHealth <= 0)
+        {
+            Die();
+            Debug.Log("Killed minion");
+            //PlayerStats.Money += 10;
+        }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (health == 0)
-        {
-            active = true;
-            //death
-        }
+        healthBar.rectTransform.localScale = new Vector3((currentHealth / startHealth), 1, 1);
     }
+
 }
