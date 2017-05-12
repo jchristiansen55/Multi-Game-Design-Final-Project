@@ -78,7 +78,7 @@ public class MinionAttackRED : MonoBehaviour
             if (fireCountdown <= 0)
             {
                 Shoot();
-                fireCountdown = 1f / fireRate;
+                fireCountdown = 10f / fireRate;
             }
             fireCountdown -= Time.deltaTime;
         }

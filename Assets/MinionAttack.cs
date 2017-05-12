@@ -68,7 +68,8 @@ public class MinionAttack : MonoBehaviour
     void Update()
     {
         // if (GetComponent.
-        if (walk) {
+        if (walk)
+        {
             Vector3 dir = wayp.position - transform.position;
             transform.Translate(dir.normalized * speed * Time.deltaTime);
         }
@@ -87,7 +88,7 @@ public class MinionAttack : MonoBehaviour
     void Shoot ()
     {
         targetEnemy.TakeDamage(damage);
-        Debug.Log("DMG'D MINION");
+        //Debug.Log("DMG'D MINION");
     }
 
     void OnDrawGizmosSelected()

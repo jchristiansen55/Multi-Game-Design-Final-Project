@@ -5,14 +5,12 @@ public class TurretAttacks : MonoBehaviour
 {
 
     public Transform target;
-    private Turrets targetEnemy;
+    private Minions targetEnemy;
 
     public float speed = 10f;
 
-    
-    
     public float aggroRange = 40f;
-    public float range = 20;
+    public float range = 40;
 
     
     public bool kill = false;
@@ -50,7 +48,7 @@ public class TurretAttacks : MonoBehaviour
         {
             target = nearestEnemy.transform;
             
-            targetEnemy = nearestEnemy.GetComponent<Turrets>();
+            targetEnemy = nearestEnemy.GetComponent<Minions>();
             kill = true;
             while (shortestDistance >= range)
             {
@@ -84,7 +82,7 @@ public class TurretAttacks : MonoBehaviour
     void Shoot()
     {
         targetEnemy.TakeDamage(damage);
-        Debug.Log("DMG'D MINION");
+        //Debug.Log("DMG'D MINION");
     }
 
     void OnDrawGizmosSelected()
