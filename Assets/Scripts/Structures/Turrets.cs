@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Turrets : MonoBehaviour
-{
+public class Turrets : MonoBehaviour {
 
     public static float currentHealth;
     public static int level; //To Scale up overtime
@@ -30,7 +29,7 @@ public class Turrets : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
-            Debug.Log("Killed minion");
+            //Debug.Log("Killed minion");
             //PlayerStats.Money += 10;
         }
     }

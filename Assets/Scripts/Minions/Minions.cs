@@ -12,7 +12,7 @@ public class Minions : MonoBehaviour {
 
     public Image healthBar;
 
-    public int startHealth = 35;
+    public float startHealth = 40;
 
     // Use this for initialization
     void Start ()
