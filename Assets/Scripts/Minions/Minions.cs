@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class Minions : MonoBehaviour {
 
-    public static float currentHealth;
-    public static int level; //To Scale up overtime
-    public static int expWorth; //exp awarded when killed to scale with level for catch up mechanic?
-    public static int goldWorth;
+    public float startHealth = 100;
+    public int level; //To Scale up overtime
+    public int expWorth; //exp awarded when killed to scale with level for catch up mechanic?
+    public int goldWorth;
 
     public Image healthBar;
-
-    public float startHealth = 40;
+    
+    public float currentHealth;
 
     // Use this for initialization
     void Start ()
