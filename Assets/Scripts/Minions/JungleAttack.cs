@@ -3,8 +3,10 @@ using System.Collections;
 
 public class JungleAttack : MonoBehaviour
 {
+
+    public Transform target;
     public Transform partToRotate;
-    private Transform target;
+
     private Minions targetEnemy;
 
     public GameObject misslePrefab;
@@ -12,8 +14,8 @@ public class JungleAttack : MonoBehaviour
 
     public float speed = 10f;
 
-    public float aggroRange = 40f;
-    public float range = 40;
+    public float aggroRange = 30f;
+    public float range = 10f;
 
 
     public bool kill = false;
@@ -29,7 +31,6 @@ public class JungleAttack : MonoBehaviour
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
-
     }
 
     void UpdateTarget()
@@ -69,7 +70,11 @@ public class JungleAttack : MonoBehaviour
     void Update()
     {
         // if (GetComponent.
-        LockOnTarget();
+
+        if (target != null)
+        {
+            LockOnTarget();
+        }
         if (kill)
         {
             if (fireCountdown <= 0)
@@ -79,7 +84,6 @@ public class JungleAttack : MonoBehaviour
             }
             fireCountdown -= Time.deltaTime;
         }
-
 
     }
 
@@ -92,7 +96,6 @@ public class JungleAttack : MonoBehaviour
 
         if (bullet != null)
             bullet.Seek(target);
-
     }
 
     void OnDrawGizmosSelected()
@@ -102,7 +105,7 @@ public class JungleAttack : MonoBehaviour
     }
     void LockOnTarget()
     {
-        Vector3 dir = target.transform.position - transform.position;
+        Vector3 dir = target.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
         Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * speed).eulerAngles;
         partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
