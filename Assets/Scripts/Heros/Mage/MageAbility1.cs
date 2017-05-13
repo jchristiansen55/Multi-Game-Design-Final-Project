@@ -13,6 +13,7 @@ public class MageAbility1 : MonoBehaviour {
 
 	public float  ab1CDTime;
 	public float charFreezeCD;
+	public float speed; 
 
     float ab1Timer = 0;
 
@@ -35,10 +36,10 @@ public class MageAbility1 : MonoBehaviour {
 	}	
 
 	void AbilityOne(){
-	
-			Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
-	
-			ab1Timer = ab1CDTime;
-			charFreezeCD = 8;
+		
+				Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
+		//ability.transform.RotateAround (transform.position, transform.up, Time.deltaTime * 90f);
+				ab1Timer = ab1CDTime;
+				charFreezeCD = 8;
 	}
 }

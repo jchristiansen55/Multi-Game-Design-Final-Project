@@ -22,9 +22,6 @@ public class SendInfo : MonoBehaviour {
 			this.GetComponent<PhotonView> ().RPC ("RecievedMove", PhotonTargets.All, hit.point);
 
 			}
-			if (Physics.Raycast (ray, out hit) && hit.transform.tag == "Blue") {
-				Debug.Log ("Enemy Targeted");
-			}
 		}
 	} 
 }
