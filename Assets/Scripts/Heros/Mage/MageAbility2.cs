@@ -14,7 +14,7 @@ using UnityEngine;
 		public bool isTeleporting = false; 
 		
 		public float  ab1CDTime;
-		public float charFreezeCD;
+		public float charFreezeCD = 0;
 		
 		public float maxBlinkLength;
 

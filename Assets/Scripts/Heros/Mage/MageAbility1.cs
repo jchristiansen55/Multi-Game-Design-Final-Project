@@ -12,7 +12,7 @@ public class MageAbility1 : MonoBehaviour {
 	public bool animationQ = false; 
 
 	public float  ab1CDTime;
-	public float charFreezeCD;
+	public float charFreezeCD = 0;
 	public float speed; 
 
     float ab1Timer = 0;
