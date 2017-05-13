@@ -3,9 +3,12 @@ using System.Collections;
 
 public class TurretAttacks : MonoBehaviour
 {
-
-    public Transform target;
+	public Transform partToRotate;
+    private Transform target;
     private Minions targetEnemy;
+
+	public GameObject misslePrefab; 
+	public GameObject firePoint; 
 
     public float speed = 10f;
 
@@ -66,7 +69,7 @@ public class TurretAttacks : MonoBehaviour
     void Update()
     {
         // if (GetComponent.
-        
+		LockOnTarget ();
         if (kill)
         {
             if (fireCountdown <= 0)
@@ -77,12 +80,19 @@ public class TurretAttacks : MonoBehaviour
             fireCountdown -= Time.deltaTime;
         }
 
+
     }
 
     void Shoot()
     {
         targetEnemy.TakeDamage(damage);
-        //Debug.Log("DMG'D MINION");
+
+			GameObject bulletGO = (GameObject)Instantiate(misslePrefab, firePoint.transform.position, firePoint.transform.rotation);
+		Bullet bullet = bulletGO.GetComponent<Bullet>();
+
+		if (bullet != null)
+			bullet.Seek(target);
+		
     }
 
     void OnDrawGizmosSelected()
@@ -90,4 +100,11 @@ public class TurretAttacks : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
     }
+	void LockOnTarget ()
+	{
+		Vector3 dir = target.transform.position - transform.position;
+		Quaternion lookRotation = Quaternion.LookRotation(dir);
+		Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * speed).eulerAngles;
+		partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+	}
 }

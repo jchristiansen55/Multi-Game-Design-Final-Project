@@ -5,7 +5,12 @@ public class TurretAttacksRed : MonoBehaviour
 {
 
     public Transform target;
+	public Transform partToRotate;
+
     private Minions targetEnemy;
+
+	public GameObject misslePrefab; 
+	public GameObject firePoint; 
 
     public float speed = 10f;
 
@@ -84,7 +89,12 @@ public class TurretAttacksRed : MonoBehaviour
     void Shoot ()
     {
         targetEnemy.TakeDamage(damage);
-        Debug.Log("TURRET DMG'D MINION");
+
+		GameObject bulletGO = (GameObject)Instantiate(misslePrefab, firePoint.transform.position, firePoint.transform.rotation);
+		Bullet bullet = bulletGO.GetComponent<Bullet>();
+
+		if (bullet != null)
+			bullet.Seek(target);
     }
 
     void OnDrawGizmosSelected()
@@ -92,4 +102,11 @@ public class TurretAttacksRed : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
     }
+	void LockOnTarget ()
+	{
+		Vector3 dir = target.position - transform.position;
+		Quaternion lookRotation = Quaternion.LookRotation(dir);
+		Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * speed).eulerAngles;
+		partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+	}
 }
