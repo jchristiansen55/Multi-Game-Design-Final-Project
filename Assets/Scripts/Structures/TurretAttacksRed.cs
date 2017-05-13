@@ -71,9 +71,9 @@ public class TurretAttacksRed : MonoBehaviour
     {
         // if (GetComponent.
 
-
-
-
+		if (target != null) {
+			LockOnTarget ();
+		}
         if (kill)
         {
             if (fireCountdown <= 0)
