@@ -7,7 +7,10 @@ public class MageAutoAttack : MonoBehaviour {
 	public GameObject Firepoint;
 	public GameObject mage;
 
+	GameObject minionsTakeDamage; 
+
 	public float maxRange;
+	public float damagePerAttack = 0; 
 
 	public bool AutoAnimation = false; 
 
@@ -18,6 +21,7 @@ public class MageAutoAttack : MonoBehaviour {
 	float distance; 
 
 	float ab1Timer = 0;
+
 
 	void OnGUI(){
 
@@ -31,7 +35,9 @@ public class MageAutoAttack : MonoBehaviour {
 		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 
 		if ((ab1Timer <= 0) && (Physics.Raycast (ray, out hit) && hit.transform.tag == "Blue") ) {
-			
+
+			minionsTakeDamage = hit.transform.gameObject;
+		
 			distance = Vector3.Distance (mage.transform.position, hit.transform.position); 
 
 			Debug.Log("distance = " + distance);
@@ -46,6 +52,7 @@ public class MageAutoAttack : MonoBehaviour {
 	void AbilityOne(){
 		ab1Timer = ab1CDTime;
 		charFreezeCD = 2;
+		minionsTakeDamage.GetComponent<Minions> ().TakeDamage(damagePerAttack);
 	}
 
 }
