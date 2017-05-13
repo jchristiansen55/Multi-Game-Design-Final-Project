@@ -1,24 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Nexus : MonoBehaviour {
 
-    public static int health;
-    
+
+    public GameObject nexus;
+
     // Use this for initialization
     void Start()
     {
-        health = 750;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (health == 0)
+       // if (GetComponent<Minions>().currentHealth <= 20) 
+       if ( nexus == null)
         {
-            //death
-            //endgame
+            Debug.Log("Hello nexus destroyed");
+           // SceneManager.LoadScene("moba");
         }
+
+      
     }
 }

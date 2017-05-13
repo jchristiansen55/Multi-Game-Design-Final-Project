@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Minions : MonoBehaviour {
 
@@ -9,6 +10,7 @@ public class Minions : MonoBehaviour {
     public int level; //To Scale up overtime
     public int expWorth; //exp awarded when killed to scale with level for catch up mechanic?
     public int goldWorth;
+    public bool nexus = false;
 
     public Image healthBar;
     
@@ -36,6 +38,11 @@ public class Minions : MonoBehaviour {
 
     void Die()
     {
+        if (nexus)
+        {
+            Debug.Log("NEXUS dying");
+            SceneManager.LoadScene("moba");
+        }
         Destroy(gameObject);
     }
 
