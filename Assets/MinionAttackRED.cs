@@ -13,7 +13,7 @@ public class MinionAttackRED : MonoBehaviour
     public int wavepointIndex = 2;
     public float aggroRange = 30f;
     public float range = 15f;
-
+    private Animator anim;
     public bool walk;
     public bool kill = false;
 
@@ -27,6 +27,8 @@ public class MinionAttackRED : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        anim = GetComponent<Animator>();
+
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
         wayp = Waypoints.points[wavepointIndex];
     }
@@ -75,6 +77,7 @@ public class MinionAttackRED : MonoBehaviour
         }
         if (kill)
         {
+
             if (fireCountdown <= 0)
             {
                 Shoot();
@@ -85,8 +88,13 @@ public class MinionAttackRED : MonoBehaviour
 
     }
 
+    private void OnDestroy()
+    {
+        anim.SetBool("death", true);
+    }
     void Shoot()
     {
+        anim.SetBool("shoot", true);
         targetEnemy.TakeDamage(damage);
         Debug.Log("DMG'D MINION");
     }

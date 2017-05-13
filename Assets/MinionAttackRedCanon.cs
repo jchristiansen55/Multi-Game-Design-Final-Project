@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MinionAttack : MonoBehaviour
+public class MinionAttackRedCanon : MonoBehaviour
 {
 
     public Transform target;
@@ -13,7 +13,7 @@ public class MinionAttack : MonoBehaviour
     public int wavepointIndex = 2;
     public float aggroRange = 30f;
     public float range = 15f;
-    private Animator anim;
+
     public bool walk;
     public bool kill = false;
 
@@ -22,12 +22,11 @@ public class MinionAttack : MonoBehaviour
     public float fireRate = 1f;
     private float fireCountdown = 0f;
 
-    public string enemyTag = "Red";
+    public string enemyTag = "Blue";
 
     // Use this for initialization
     void Start()
     {
-        anim = GetComponent<Animator>();
 
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
         wayp = Waypoints.points[wavepointIndex];
@@ -88,13 +87,10 @@ public class MinionAttack : MonoBehaviour
 
     }
 
-    private void OnDestroy()
-    {
-        anim.SetBool("death", true);
-    }
+
     void Shoot()
     {
-        anim.SetBool("shoot", true);
+
         targetEnemy.TakeDamage(damage);
         Debug.Log("DMG'D MINION");
     }
