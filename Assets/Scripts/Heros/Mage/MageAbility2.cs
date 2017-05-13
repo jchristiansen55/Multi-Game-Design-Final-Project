@@ -20,14 +20,12 @@ using UnityEngine;
 
 		RaycastHit hit;
 			
-		float waitForAnim;
 		float ab1Timer = 0;
 
 		void OnGUI(){
 
 			ab1Timer -= Time.deltaTime;
 			charFreezeCD -= Time.deltaTime;
-			waitForAnim -= Time.deltaTime;
 
 			bool ab1Key = Input.GetKeyDown (KeyCode.W);
 			if (ab1Timer <= 0) {
@@ -45,11 +43,12 @@ using UnityEngine;
 
 		Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
 
-		Vector3 blinkDirection = transform.forward;
+		Vector3 blinkDirection = character.transform.forward;
+
 		float blinkLength = maxBlinkLength;
 		if(Physics.Raycast(transform.position, blinkDirection, out hit, maxBlinkLength)){
 			blinkLength = hit.distance;
-			waitForAnim = 1;
+
 		}
 			transform.position = transform.position + (blinkDirection * blinkLength);
 
