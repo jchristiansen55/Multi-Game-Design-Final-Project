@@ -69,7 +69,9 @@ public class TurretAttacks : MonoBehaviour
     void Update()
     {
         // if (GetComponent.
-		LockOnTarget ();
+		if (target != null) {
+			LockOnTarget ();
+		}
         if (kill)
         {
             if (fireCountdown <= 0)
@@ -85,12 +87,14 @@ public class TurretAttacks : MonoBehaviour
 
     void Shoot()
     {
+		Debug.Log ("Shoot function entered");
         targetEnemy.TakeDamage(damage);
 
 			GameObject bulletGO = (GameObject)Instantiate(misslePrefab, firePoint.transform.position, firePoint.transform.rotation);
-		Bullet bullet = bulletGO.GetComponent<Bullet>();
+			Bullet bullet = bulletGO.GetComponent<Bullet>();
 
 		if (bullet != null)
+			Debug.Log ("Turret is seeking");
 			bullet.Seek(target);
 		
     }
@@ -102,7 +106,7 @@ public class TurretAttacks : MonoBehaviour
     }
 	void LockOnTarget ()
 	{
-		Vector3 dir = target.transform.position - transform.position;
+		Vector3 dir = target.position - transform.position;
 		Quaternion lookRotation = Quaternion.LookRotation(dir);
 		Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * speed).eulerAngles;
 		partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
