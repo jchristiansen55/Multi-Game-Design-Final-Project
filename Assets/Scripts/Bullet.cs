@@ -27,7 +27,7 @@ public class Bullet : MonoBehaviour {
 
 		if (dir.magnitude <= distanceThisFrame)
 		{
-			HitTarget();
+		//	HitTarget();
 			return;
 		}
 
@@ -38,7 +38,6 @@ public class Bullet : MonoBehaviour {
 
 	void HitTarget ()
 	{
-		GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
-		Destroy(effectIns,3f);
+
 	}
 }
