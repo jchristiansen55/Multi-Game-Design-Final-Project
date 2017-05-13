@@ -37,8 +37,8 @@ public class MageAbility1 : MonoBehaviour {
 
 	void AbilityOne(){
 		
-				Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
-		//ability.transform.RotateAround (transform.position, transform.up, Time.deltaTime * 90f);
+		Instantiate (ability, Firepoint.transform.position, Firepoint.transform.rotation);
+
 				ab1Timer = ab1CDTime;
 				charFreezeCD = 8;
 	}
