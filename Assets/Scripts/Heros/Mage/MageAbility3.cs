@@ -6,7 +6,7 @@ public class MageAbility3 : MonoBehaviour {
 
 	public GameObject ability;
 	public GameObject Character;
-
+		   GameObject ability3;
 	public Texture2D ab3;
 	public Texture2D ab3CD;
 
@@ -31,10 +31,15 @@ public class MageAbility3 : MonoBehaviour {
 
 	void AbilityThree(){
 
-		Instantiate (ability, Character.transform.position, Quaternion.identity);
+		ability3 = Instantiate (ability, Character.transform.position, Quaternion.identity);
 		ab3Timer = ab3CDTime;
 		if (GetComponent<MageAbility2> ().isTeleporting == true) {
 		
+		}
+	}
+	void Update(){
+		if (GetComponent<MageAbility2> ().isTeleporting == true) {
+			ability3.transform.position = Character.transform.position;
 		}
 	}
 }
