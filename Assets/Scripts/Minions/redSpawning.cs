@@ -56,14 +56,14 @@ public class redSpawning : MonoBehaviour {
     }
     void SpawnCaster()
     {
-        Instantiate(CasterMinion, spawnPoint.position, spawnPoint.rotation);
+		Instantiate(CasterMinion, spawnPoint.transform.position, spawnPoint.transform.rotation);
     }
     void SpawnCannon()
     {
-        Instantiate(CannonMinion, spawnPoint.position, spawnPoint.rotation);
+		Instantiate(CannonMinion, spawnPoint.transform.position, spawnPoint.transform.rotation);
     }
     void SpawnMelee()
     {
-        Instantiate(MeleeMinion, spawnPoint.position, spawnPoint.rotation);
+		Instantiate(MeleeMinion,  spawnPoint.transform.position, spawnPoint.transform.rotation);
     }
 }

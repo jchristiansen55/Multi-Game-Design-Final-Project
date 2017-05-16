@@ -7,6 +7,8 @@ public class MageAutoAttack : MonoBehaviour {
 	public GameObject Firepoint;
 	public GameObject mage;
 
+	 Transform target = null; 
+
 	GameObject minionsTakeDamage; 
 
 	public float maxRange;
@@ -16,7 +18,6 @@ public class MageAutoAttack : MonoBehaviour {
 
 	public float  ab1CDTime;
 	public float charFreezeCD = 0;
-	public float turnSpeed = 10f;
 
 	float distance; 
 
@@ -37,22 +38,35 @@ public class MageAutoAttack : MonoBehaviour {
 		if ((ab1Timer <= 0) && (Physics.Raycast (ray, out hit) && hit.transform.tag == "Blue") ) {
 
 			minionsTakeDamage = hit.transform.gameObject;
-		
+			target = minionsTakeDamage.transform;
+
 			distance = Vector3.Distance (mage.transform.position, hit.transform.position); 
 
-			Debug.Log("distance = " + distance);
-
 			if (ab1Key && (distance <= maxRange)) {
+				
+				Instantiate (ability, minionsTakeDamage.transform.position , Quaternion.identity);
 				AbilityOne ();
-			    Instantiate (ability, hit.transform.position , Quaternion.identity);
+
+				
 				AutoAnimation = true;
+			
 			}
 		}
 	}
 	void AbilityOne(){
+
+	
+		GameObject bulletGO = Instantiate(ability, Firepoint.transform.position, Firepoint.transform.rotation);
+		Bullet bullet = bulletGO.GetComponent<Bullet>();
+
+	
+		if (bullet != null) {
+			bullet.Seek (target);
+		}
+
+
 		ab1Timer = ab1CDTime;
 		charFreezeCD = 2;
 		minionsTakeDamage.GetComponent<Minions> ().TakeDamage(damagePerAttack);
 	}
-
 }

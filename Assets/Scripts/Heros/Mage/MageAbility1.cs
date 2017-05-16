@@ -30,8 +30,8 @@ public class MageAbility1 : MonoBehaviour {
 		if (ab1Timer <= 0) {
 			GUI.Label (new Rect (10, 10, 50, 50), ab1);
 			if (ab1Key) {
-				AbilityOne ();
 				animationQ = true;
+				AbilityOne ();
 			}
 		} else {
 			GUI.Label (new Rect (10, 10, 50, 50), ab1CD);
@@ -48,5 +48,6 @@ public class MageAbility1 : MonoBehaviour {
 		if (GetComponent<MageAbility2> ().isTeleporting == true) {
 			ability.transform.position = Firepoint.transform.position;
 		}
+		//minionsTakeDamage.GetComponent<Minions> ().TakeDamage(damagePerAttack);
 	}
 }

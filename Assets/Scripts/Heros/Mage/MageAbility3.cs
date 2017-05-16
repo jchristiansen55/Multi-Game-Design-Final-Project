@@ -10,6 +10,8 @@ public class MageAbility3 : MonoBehaviour {
 	public Texture2D ab3;
 	public Texture2D ab3CD;
 
+	bool castingE = false;
+
 	public float  ab3CDTime;
 
 	float ab3Timer = 0;
@@ -22,6 +24,7 @@ public class MageAbility3 : MonoBehaviour {
 		if (ab3Timer <= 0) {
 			GUI.Label (new Rect (110, 10, 50, 50), ab3);
 			if (ab3Key) {
+				castingE = true;
 				AbilityThree ();
 			}
 		} else {
@@ -33,14 +36,12 @@ public class MageAbility3 : MonoBehaviour {
 
 		ability3 = Instantiate (ability, Character.transform.position, Quaternion.identity);
 		ab3Timer = ab3CDTime;
-		if (GetComponent<MageAbility2> ().isTeleporting == true) {
-		
-		}
 	}
 	void Update(){
-		if (GetComponent<MageAbility2> ().isTeleporting == true) {
+		if ((GetComponent<MageAbility2> ().isTeleporting == true)&&(castingE == true)) {
 			ability3.transform.position = Character.transform.position;
 		}
+		//minionsTakeDamage.GetComponent<Minions> ().TakeDamage(damagePerAttack);
 	}
 }
 

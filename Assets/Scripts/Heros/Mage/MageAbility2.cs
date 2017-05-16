@@ -57,6 +57,6 @@ using UnityEngine;
 		Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
 
 			ab1Timer = ab2CDTime;
-			charFreezeCD = 2;
+			charFreezeCD = 0;
 		}
 	}

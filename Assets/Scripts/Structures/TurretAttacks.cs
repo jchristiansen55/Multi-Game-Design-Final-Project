@@ -87,14 +87,14 @@ public class TurretAttacks : MonoBehaviour
 
     void Shoot()
     {
-		Debug.Log ("Shoot function entered");
+
         targetEnemy.TakeDamage(damage);
 
 			GameObject bulletGO = (GameObject)Instantiate(misslePrefab, firePoint.transform.position, firePoint.transform.rotation);
 			Bullet bullet = bulletGO.GetComponent<Bullet>();
 
 		if (bullet != null)
-			Debug.Log ("Turret is seeking");
+			
 			bullet.Seek(target);
 		
     }

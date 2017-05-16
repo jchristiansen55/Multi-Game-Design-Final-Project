@@ -92,7 +92,6 @@ public class TurretAttacksRed : MonoBehaviour
 
 		GameObject bulletGO = (GameObject)Instantiate(misslePrefab, firePoint.transform.position, firePoint.transform.rotation);
 		Bullet bullet = bulletGO.GetComponent<Bullet>();
-
 		if (bullet != null)
 			bullet.Seek(target);
     }
