@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class MageAbility1 : MonoBehaviour {
 
-	public GameObject ability;
+	public GameObject ChanneledAbility;
+	public GameObject GroundEffect;
 	public GameObject Firepoint;
+	public GameObject Mage; 
 
 	public Texture2D ab1;
 	public Texture2D ab1CD;
@@ -37,9 +40,21 @@ public class MageAbility1 : MonoBehaviour {
 
 	void AbilityOne(){
 		
-		Instantiate (ability, Firepoint.transform.position, Firepoint.transform.rotation);
+		Instantiate (ChanneledAbility, Firepoint.transform.position, Firepoint.transform.rotation);
 
 				ab1Timer = ab1CDTime;
 				charFreezeCD = 8;
+	}
+	void Start(){}
+	void Update(){
+		if (GetComponent<MageAbility2> ().isTeleporting == true) {
+			Debug.Log ("I HATE LIFE");
+			//Instantiate (ChanneledAbility, Firepoint.transform.position, Firepoint.transform.rotation);
+			ChanneledAbility.transform.position = Firepoint.transform.position;
+			if (ChanneledAbility.transform.position == Firepoint.transform.position) {
+				Debug.Log ("WHY WONT THIS WORK GDSFKLHGLKDFHJ GK:");
+			}
+
+		}
 	}
 }

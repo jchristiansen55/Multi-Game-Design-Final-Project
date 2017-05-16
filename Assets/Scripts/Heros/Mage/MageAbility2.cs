@@ -8,38 +8,38 @@ using UnityEngine;
 		public GameObject Firepoint;
 		public GameObject character; 
 
-		public Texture2D ab1;
-		public Texture2D ab1CD;
+		public Texture2D ab2;
+		public Texture2D ab2CD;
 		
 		public bool isTeleporting = false; 
 		
-		public float  ab1CDTime;
+		public float  ab2CDTime;
 		public float charFreezeCD = 0;
 		
 		public float maxBlinkLength;
 
 		RaycastHit hit;
 			
-		float ab1Timer = 0;
+		float ab2Timer = 0;
 
 		void OnGUI(){
 
-			ab1Timer -= Time.deltaTime;
+			ab2Timer -= Time.deltaTime;
 			charFreezeCD -= Time.deltaTime;
 
-			bool ab1Key = Input.GetKeyDown (KeyCode.W);
-			if (ab1Timer <= 0) {
-				GUI.Label (new Rect (60, 10, 50, 50), ab1);
-				if (ab1Key) {
-					AbilityOne ();
+			bool ab2Key = Input.GetKeyDown (KeyCode.W);
+			if (ab2Timer <= 0) {
+				GUI.Label (new Rect (60, 10, 50, 50), ab2);
+				if (ab2Key) {
+					AbilityTwo ();
 				isTeleporting = true;
 				}
 			} else {
-				GUI.Label (new Rect (60, 10, 50, 50), ab1CD);
+				GUI.Label (new Rect (60, 10, 50, 50), ab2CD);
 			}
 		}	
 
-		void AbilityOne(){
+		void AbilityTwo(){
 
 		Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
 
@@ -54,7 +54,7 @@ using UnityEngine;
 
 		Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
 
-			ab1Timer = ab1CDTime;
+			ab2Timer = ab2CDTime;
 			charFreezeCD = 2;
 		}
 	}
