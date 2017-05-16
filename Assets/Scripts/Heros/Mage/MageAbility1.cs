@@ -7,13 +7,18 @@ public class MageAbility1 : MonoBehaviour {
 	public GameObject ChanneledAbility;
 	public GameObject Firepoint;
 	public GameObject Mage; 
+
+    Collider animationCollider;
+
 		   GameObject ability;
+		   GameObject minionsTakeDamage; 
 
 	public Texture2D ab1;
 	public Texture2D ab1CD;
 
 	public bool animationQ = false; 
 
+	public float damagePerAttack = 0; 
 	public float  ab1CDTime;
 	public float charFreezeCD = 0;
 	public float speed; 
@@ -43,11 +48,23 @@ public class MageAbility1 : MonoBehaviour {
 	 ability = Instantiate(ChanneledAbility, Firepoint.transform.position, Firepoint.transform.rotation);
 				ab1Timer = ab1CDTime;
 				charFreezeCD = 8;
+	 animationCollider = ability.GetComponent<Collider> ();
 	}
 	void Update(){
+		if (animationCollider == ability.GetComponent<Collider> ()) {
+			Debug.Log ("jksdlfjsd");
+		}
+		OnTriggerEnter (animationCollider);
+
 		if (GetComponent<MageAbility2> ().isTeleporting == true) {
 			ability.transform.position = Firepoint.transform.position;
 		}
-		//minionsTakeDamage.GetComponent<Minions> ().TakeDamage(damagePerAttack);
+	}
+	void OnTriggerEnter(Collider animation){
+		Debug.Log ("Something Collided with Q");
+		//if (Collider.gameObject.tag == "Blue") {
+		//	minionsTakeDamage = Collider.transform.gameObject; 
+		//	minionsTakeDamage.GetComponent<Minions> ().TakeDamage (damagePerAttack);
+		//}
 	}
 }

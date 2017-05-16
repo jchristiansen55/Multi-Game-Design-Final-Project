@@ -8,6 +8,8 @@ public class MageAbility3 : MonoBehaviour {
 	public GameObject Character;
 		   GameObject ability3;
 
+	public Collider animationCollider;
+
 	public Texture2D ab3;
 	public Texture2D ab3CD;
 
@@ -42,7 +44,8 @@ public class MageAbility3 : MonoBehaviour {
 		if (castingE == true) {
 			ability3.transform.position = Character.transform.position;
 		}
-		//minionsTakeDamage.GetComponent<Minions> ().TakeDamage(damagePerAttack);
+
 	}
+
 }
 
