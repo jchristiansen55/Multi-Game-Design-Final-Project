@@ -7,6 +7,7 @@ public class MageAbility3 : MonoBehaviour {
 	public GameObject ability;
 	public GameObject Character;
 		   GameObject ability3;
+
 	public Texture2D ab3;
 	public Texture2D ab3CD;
 
@@ -38,7 +39,7 @@ public class MageAbility3 : MonoBehaviour {
 		ab3Timer = ab3CDTime;
 	}
 	void Update(){
-		if ((GetComponent<MageAbility2> ().isTeleporting == true)&&(castingE == true)) {
+		if (castingE == true) {
 			ability3.transform.position = Character.transform.position;
 		}
 		//minionsTakeDamage.GetComponent<Minions> ().TakeDamage(damagePerAttack);

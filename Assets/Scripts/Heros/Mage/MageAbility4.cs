@@ -6,41 +6,42 @@ public class MageAbility4 : MonoBehaviour {
 
 	public GameObject Ability;
 	public GameObject Firepoint;
-	public GameObject FeetLocation;
+	public GameObject Character; 
+	GameObject Ability1;
 
 	public Texture2D ab4;
 	public Texture2D ab4CD;
 
-	public bool animationQ = false; 
-
 	public float  ab4CDTime;
-	public float charFreezeCD = 0;
-	public float speed; 
+
+    bool animationR = false; 
 
 	float ab4Timer = 0;
 
 	void OnGUI(){
 
 		ab4Timer -= Time.deltaTime;
-		charFreezeCD -= Time.deltaTime;
 
-
-		bool ab4Key = Input.GetKeyDown (KeyCode.Q);
+		bool ab4Key = Input.GetKeyDown (KeyCode.R);
 		if (ab4Timer <= 0) {
-			GUI.Label (new Rect (10, 10, 50, 50), ab4);
+			GUI.Label (new Rect (160, 10, 50, 50), ab4);
 			if (ab4Key) {
+				animationR = true;
 				AbilityFour ();
-				animationQ = true;
 			}
 		} else {
-			GUI.Label (new Rect (10, 10, 50, 50), ab4CD);
+			GUI.Label (new Rect (160, 10, 50, 50), ab4CD);
 		}
 	}	
 
 	void AbilityFour(){
-
-		Instantiate (Ability, Firepoint.transform.position, Firepoint.transform.rotation);
+		Ability1 = Instantiate (Ability, Firepoint.transform.position, Firepoint.transform.rotation);
 		ab4Timer = ab4CDTime;
-		charFreezeCD = 0;
+	}
+	void Update(){
+		if ((animationR == true)) {
+			Debug.Log ("in ability4 update function");
+			Ability1.transform.position = Character.transform.position;
+		}
 	}
 }
