@@ -52,15 +52,13 @@ public class GameManager : Photon.MonoBehaviour {
 		case 2: 
 			//Champ Select
 			GUI.Label (new Rect (10, 40, 200, 30), "Select Challenger");
-			if (GUI.Button (new Rect (70, 10, 100, 30), "Cube")) {
-				Spawn (0, "PlayerTest");
+			if (GUI.Button (new Rect (70, 10, 100, 30), "Katanami")) {
+				Spawn (0, "Katanami");
 			}
-			if (GUI.Button (new Rect (180, 10, 100, 30), "Yasuo")) {
-				Spawn (0, "Yasuo");
-			}
-			if (GUI.Button (new Rect (350, 10, 100, 30), "Mage")) {
+			if (GUI.Button (new Rect (180, 10, 100, 30), "Mage")) {
 				Spawn (0, "Mage");
 			}
+
 			break;
 				case 3: 
 				// IN GAME
