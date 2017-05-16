@@ -7,6 +7,7 @@ using UnityEngine;
 		public GameObject ability;
 		public GameObject Firepoint;
 		public GameObject character; 
+		public GameObject ChanneledAbility; 
 
 		public Texture2D ab2;
 		public Texture2D ab2CD;
@@ -20,18 +21,19 @@ using UnityEngine;
 
 		RaycastHit hit;
 			
-		float ab2Timer = 0;
+		float ab1Timer = 0;
 
 		void OnGUI(){
 
-			ab2Timer -= Time.deltaTime;
+			ab1Timer -= Time.deltaTime;
 			charFreezeCD -= Time.deltaTime;
 
-			bool ab2Key = Input.GetKeyDown (KeyCode.W);
-			if (ab2Timer <= 0) {
+			bool ab1Key = Input.GetKeyDown (KeyCode.W);
+			if (ab1Timer <= 0) {
 				GUI.Label (new Rect (60, 10, 50, 50), ab2);
-				if (ab2Key) {
+				if (ab1Key) {
 					AbilityTwo ();
+
 				isTeleporting = true;
 				}
 			} else {
@@ -46,7 +48,7 @@ using UnityEngine;
 		Vector3 blinkDirection = character.transform.forward;
 
 		float blinkLength = maxBlinkLength;
-		if(Physics.Raycast(transform.position, blinkDirection, out hit, maxBlinkLength)){
+		if(Physics.Raycast(character.transform.position, blinkDirection, out hit, maxBlinkLength)){
 			blinkLength = hit.distance;
 
 		}
@@ -54,7 +56,7 @@ using UnityEngine;
 
 		Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
 
-			ab2Timer = ab2CDTime;
+			ab1Timer = ab2CDTime;
 			charFreezeCD = 2;
 		}
 	}

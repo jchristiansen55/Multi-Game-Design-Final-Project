@@ -25,13 +25,11 @@ public class Minions : MonoBehaviour {
     }
     public void TakeDamage(float amount)
     {
-        Debug.Log(currentHealth + "?");
         currentHealth -= amount;
         
         if (currentHealth <= 0)
         {
             Die();
-            Debug.Log("Killed minion");
             //PlayerStats.Money += 10;
         }
     }
@@ -40,7 +38,6 @@ public class Minions : MonoBehaviour {
     {
         if (nexus)
         {
-            Debug.Log("NEXUS dying");
             SceneManager.LoadScene("moba");
         }
         Destroy(gameObject);
