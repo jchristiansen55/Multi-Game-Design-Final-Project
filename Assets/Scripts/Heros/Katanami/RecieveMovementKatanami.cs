@@ -17,12 +17,15 @@ public class RecieveMovementKatanami : MonoBehaviour {
 		}
 		
 		void Update () {
-		/**
-			if ((GetComponent<MageAbility1> ().charFreezeCD <= 0)&&
-				(GetComponent<MageAutoAttack>().charFreezeCD <= 0)&&
-				(GetComponent<MageAbility2>().charFreezeCD <=0))
+		
+			if (
+				//(GetComponent<MageAbility1> ().charFreezeCD <= 0)&&
+			(GetComponent<SamAuto>().charFreezeCD <= 0)
+
+				//&&(GetComponent<MageAbility2>().charFreezeCD <=0)
+				)
 			{
-			*/
+			
 				if (Vector3.Distance (newposition, this.transform.position) > walkRange) {
 					this.transform.position = Vector3.MoveTowards (this.transform.position, newposition, speed * Time.deltaTime); 
 					Quaternion transRot = Quaternion.LookRotation (newposition - this.transform.position, Vector3.up);
@@ -32,12 +35,10 @@ public class RecieveMovementKatanami : MonoBehaviour {
 				if ((Vector3.Distance (newposition, this.transform.position) < walkRange) && (whileRunning == true)) {
 					whileRunning = false; 
 				} 
-			//}
+			}
 		}
 		[PunRPC]
 		public void RecievedMove(Vector3 movePos){
 			newposition = movePos;
-
-
 		}
 	}

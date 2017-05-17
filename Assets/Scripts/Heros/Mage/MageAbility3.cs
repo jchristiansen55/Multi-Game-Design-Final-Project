@@ -15,7 +15,7 @@ public class MageAbility3 : MonoBehaviour {
 
 	bool castingE = false;
 
-	public float  ab3CDTime;
+	public float ab3CDTime;
 
 	float ab3Timer = 0;
 
@@ -36,7 +36,6 @@ public class MageAbility3 : MonoBehaviour {
 	}	
 
 	void AbilityThree(){
-
 		ability3 = Instantiate (ability, Character.transform.position, Quaternion.identity);
 		ab3Timer = ab3CDTime;
 	}

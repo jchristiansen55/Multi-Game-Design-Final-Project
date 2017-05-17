@@ -6,9 +6,6 @@ public class MageAbility1 : MonoBehaviour {
 
 	public GameObject ChanneledAbility;
 	public GameObject Firepoint;
-	public GameObject Mage; 
-
-    Collider animationCollider;
 
 		   GameObject ability;
 		   GameObject minionsTakeDamage; 
@@ -48,23 +45,10 @@ public class MageAbility1 : MonoBehaviour {
 	 ability = Instantiate(ChanneledAbility, Firepoint.transform.position, Firepoint.transform.rotation);
 				ab1Timer = ab1CDTime;
 				charFreezeCD = 8;
-	 animationCollider = ability.GetComponent<Collider> ();
 	}
 	void Update(){
-		if (animationCollider == ability.GetComponent<Collider> ()) {
-			Debug.Log ("jksdlfjsd");
-		}
-		OnTriggerStay (animationCollider);
-
 		if (GetComponent<MageAbility2> ().isTeleporting == true) {
 			ability.transform.position = Firepoint.transform.position;
 		}
-	}
-	void OnTriggerStay(Collider animation){
-		Debug.Log ("Something Collided with Q");
-		//if (Collider.gameObject.tag == "Blue") {
-		//	minionsTakeDamage = Collider.transform.gameObject; 
-		//	minionsTakeDamage.GetComponent<Minions> ().TakeDamage (damagePerAttack);
-		//}
 	}
 }
