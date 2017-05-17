@@ -54,13 +54,13 @@ public class MageAbility1 : MonoBehaviour {
 		if (animationCollider == ability.GetComponent<Collider> ()) {
 			Debug.Log ("jksdlfjsd");
 		}
-		OnTriggerEnter (animationCollider);
+		OnTriggerStay (animationCollider);
 
 		if (GetComponent<MageAbility2> ().isTeleporting == true) {
 			ability.transform.position = Firepoint.transform.position;
 		}
 	}
-	void OnTriggerEnter(Collider animation){
+	void OnTriggerStay(Collider animation){
 		Debug.Log ("Something Collided with Q");
 		//if (Collider.gameObject.tag == "Blue") {
 		//	minionsTakeDamage = Collider.transform.gameObject; 
