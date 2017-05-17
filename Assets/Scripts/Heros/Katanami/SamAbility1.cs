@@ -4,13 +4,50 @@ using UnityEngine;
 
 public class SamAbility1 : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+
+	public GameObject Ability;
+	public GameObject Firepoint;
+
+	GameObject ability;
+	GameObject minionsTakeDamage; 
+
+	public Texture2D ab1;
+	public Texture2D ab1CD;
+
+	public bool animationQ = false; 
+
+	public float damagePerAttack = 0; 
+	public float  ab1CDTime;
+	public float charFreezeCD = 0;
+
+	float ab1Timer = 0;
+
+	void OnGUI(){
+
+		ab1Timer -= Time.deltaTime;
+		charFreezeCD -= Time.deltaTime;
+
+
+		bool ab1Key = Input.GetKeyDown (KeyCode.Q);
+		if (ab1Timer <= 0) {
+			GUI.Label (new Rect (10, 10, 50, 50), ab1);
+			if (ab1Key) {
+				AbilityOne ();
+				animationQ = true;
+			}
+		} else {
+			GUI.Label (new Rect (10, 10, 50, 50), ab1CD);
+		}
+	}	
+
+	void AbilityOne(){
+		ability = Instantiate(Ability, Firepoint.transform.position, Firepoint.transform.rotation);
+		ab1Timer = ab1CDTime;
+		charFreezeCD = 3;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	void Update(){
+		if (animationQ == true) {
+		ability.transform.position = Firepoint.transform.position;
+		}
 	}
 }
