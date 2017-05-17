@@ -23,6 +23,10 @@ public class Player : MonoBehaviour {
 		if (RM.GetComponent<SamAuto> ().AutoAnimation == true) {
 			RM.GetComponent<SamAuto> ().AutoAnimation = false; 
 		}
+		anim.SetBool ("QCast", RM.GetComponent<SamAbility1> ().animationQ);
+		if (RM.GetComponent<SamAbility1> ().animationQ == true) {
+			RM.GetComponent<SamAbility1> ().animationQ = false; 
+		}
 
 		anim.SetBool ("ECast", RM.GetComponent<SamAbility3> ().castingE);
 	

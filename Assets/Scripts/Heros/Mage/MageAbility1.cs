@@ -41,11 +41,11 @@ public class MageAbility1 : MonoBehaviour {
 	}	
 
 	void AbilityOne(){
-		
 	 ability = Instantiate(ChanneledAbility, Firepoint.transform.position, Firepoint.transform.rotation);
 				ab1Timer = ab1CDTime;
 				charFreezeCD = 8;
 	}
+
 	void Update(){
 		if (GetComponent<MageAbility2> ().isTeleporting == true) {
 			ability.transform.position = Firepoint.transform.position;
