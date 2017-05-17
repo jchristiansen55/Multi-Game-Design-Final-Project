@@ -40,7 +40,6 @@ public class MageAbility4 : MonoBehaviour {
 	}
 	void Update(){
 		if ((animationR == true)) {
-			Debug.Log ("in ability4 update function");
 			Ability1.transform.position = Character.transform.position;
 		}
 	}
