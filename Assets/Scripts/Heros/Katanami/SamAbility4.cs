@@ -77,7 +77,7 @@ public class SamAbility4 : MonoBehaviour {
 
 		ab4Timer = ab4CDTime;
 		minionsTakeDamage.GetComponent<Minions> ().TakeDamage(damagePerAttack);
-		charFreezeCD = 1.5;
+		charFreezeCD = 1.5f;
 	}
 	void Update(){
 		//if ((animationR == true)) {
