@@ -16,6 +16,7 @@ public class MinionAttackBlueCanon : MonoBehaviour
     private Animator anim;
 
     public bool walk;
+    public bool aggro;
     public bool kill = false;
 
     //public GameObject bulletPrefab;
@@ -49,21 +50,23 @@ public class MinionAttackBlueCanon : MonoBehaviour
             }
         }
 
-        if (nearestEnemy != null && shortestDistance <= range)
+        if (nearestEnemy != null && shortestDistance <= aggroRange)
         {
             target = nearestEnemy.transform;
-            walk = false;
             targetEnemy = nearestEnemy.GetComponent<Minions>();
-            kill = true;
-            while (shortestDistance >= range)
+            walk = false;
+            aggro = true;
+            if (nearestEnemy != null && shortestDistance <= range)
             {
-
+                kill = true;
+                aggro = false;
             }
         }
         else
         {
             target = null;
             walk = true;
+            aggro = false;
             kill = false;
         }
     }
@@ -74,6 +77,13 @@ public class MinionAttackBlueCanon : MonoBehaviour
         if (walk)
         {
             Vector3 dir = wayp.position - transform.position;
+            transform.Translate(dir.normalized * speed * Time.deltaTime);
+        }
+        if (aggro)
+        {
+            // Vector3.MoveTowards(transform.position, targetEnemy.transform.position , speed * Time.deltaTime);
+
+            Vector3 dir = targetEnemy.transform.position - transform.position;
             transform.Translate(dir.normalized * speed * Time.deltaTime);
         }
         if (kill)
@@ -103,6 +113,6 @@ public class MinionAttackBlueCanon : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, range);
+        Gizmos.DrawWireSphere(transform.position, aggroRange);
     }
 }
