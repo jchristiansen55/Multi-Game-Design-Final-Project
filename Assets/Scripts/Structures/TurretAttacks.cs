@@ -104,6 +104,7 @@ public class TurretAttacks : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
     }
+
 	void LockOnTarget ()
 	{
 		Vector3 dir = target.position - transform.position;

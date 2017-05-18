@@ -6,6 +6,7 @@ public class MinionAttackRED : MonoBehaviour
 
     public Transform target;
     private Minions targetEnemy;
+	public Transform rotateTowards;
 
     public float speed = 10f;
 
@@ -70,6 +71,9 @@ public class MinionAttackRED : MonoBehaviour
     void Update()
     {
         // if (GetComponent.
+		if (target != null) {
+			LockOnTarget ();
+		}
         if (walk)
         {
             Vector3 dir = wayp.position - transform.position;
@@ -98,6 +102,13 @@ public class MinionAttackRED : MonoBehaviour
         targetEnemy.TakeDamage(damage);
         Debug.Log("DMG'D MINION");
     }
+	void LockOnTarget ()
+	{
+		Vector3 dir = target.position - transform.position;
+		Quaternion lookRotation = Quaternion.LookRotation(dir);
+		Vector3 rotation = Quaternion.Lerp(rotateTowards.rotation, lookRotation, Time.deltaTime * speed).eulerAngles;
+		rotateTowards.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+	}
 
     void OnDrawGizmosSelected()
     {

@@ -31,6 +31,11 @@ public class Player : MonoBehaviour {
 		if (RM.GetComponent<SamAbility4> ().animationR == true) {
 			RM.GetComponent<SamAbility4> ().animationR = false; 
 		}
+		anim.SetBool ("WCast", RM.GetComponent<SamAbility2>().isCasting);
+		if (RM.GetComponent<SamAbility2> ().isCasting == true) {
+			RM.GetComponent<SamAbility2> ().isCasting = false; 
+		}
+
 
 		anim.SetBool ("ECast", RM.GetComponent<SamAbility3> ().castingE);
 	

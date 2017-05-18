@@ -21,7 +21,8 @@ public class RecieveMovementKatanami : MonoBehaviour {
 			if (
 			(GetComponent<SamAbility1> ().charFreezeCD <= 0)&&
 			(GetComponent<SamAuto>().charFreezeCD <= 0)&&
-			(GetComponent<SamAbility4>().charFreezeCD <=0)
+			(GetComponent<SamAbility4>().charFreezeCD <=0)&&
+			(GetComponent<SamAbility2>().charFreezeCD <=0)
 				)
 			{
 			
