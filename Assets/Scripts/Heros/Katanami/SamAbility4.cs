@@ -52,9 +52,9 @@ public class SamAbility4 : MonoBehaviour {
 		bool ab4Key = Input.GetKeyDown (KeyCode.R);
 
 		if (ab4Timer <= 0) {
-			GUI.Label (new Rect (160, 10, 50, 50), ab4);
+			GUI.Label (new Rect (930, 595, 50, 50), ab4);
 		} else {
-			GUI.Label (new Rect (160, 10, 50, 50), ab4CD);
+			GUI.Label (new Rect (930, 595, 50, 50), ab4CD);
 		}
 		if ((ab4Timer <= 0) && (Physics.Raycast (ray, out hit) && hit.transform.tag == "Blue") ) {
 

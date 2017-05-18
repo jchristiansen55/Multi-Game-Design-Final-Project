@@ -40,13 +40,13 @@ public class MageAbility1 : MonoBehaviour {
 
 		bool ab1Key = Input.GetKeyDown (KeyCode.Q);
 		if (ab1Timer <= 0) {
-			GUI.Label (new Rect (10, 10, 50, 50), ab1);
+			GUI.Label (new Rect (642, 595, 50, 50), ab1);
 			if (ab1Key) {
 				animationQ = true;
 				AbilityOne ();
 			}
 		} else {
-			GUI.Label (new Rect (10, 10, 50, 50), ab1CD);
+			GUI.Label (new Rect (642, 595, 50, 50), ab1CD);
 		}
 	}	
 

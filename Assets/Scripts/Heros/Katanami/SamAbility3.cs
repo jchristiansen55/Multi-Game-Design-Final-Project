@@ -40,13 +40,13 @@ public class SamAbility3 : MonoBehaviour {
 
 		bool ab3Key = Input.GetKeyDown (KeyCode.E);
 		if (ab3Timer <= 0) {
-			GUI.Label (new Rect (110, 10, 50, 50), ab3);
+			GUI.Label (new Rect (835, 595, 50, 50), ab3);
 			if (ab3Key) {
 				AbilityThree ();
 				castingE = true;
 			}
 		} else {
-			GUI.Label (new Rect (110, 10, 50, 50), ab3CD);
+			GUI.Label (new Rect (835, 595, 50, 50), ab3CD);
 		}
 	}	
 

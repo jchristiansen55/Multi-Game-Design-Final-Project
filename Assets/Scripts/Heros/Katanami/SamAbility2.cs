@@ -39,13 +39,13 @@ public class SamAbility2 : MonoBehaviour {
 			(GetComponent<SamAbility4> ().animationR == false)) 
 		{
 			if (ab1Timer <= 0) {
-				GUI.Label (new Rect (60, 10, 50, 50), ab2);
+				GUI.Label (new Rect (740, 595, 50, 50), ab2);
 				if (ab1Key) {
 					AbilityTwo ();
 					isCasting = true;
 				}
 			} else {
-				GUI.Label (new Rect (60, 10, 50, 50), ab2CD);
+				GUI.Label (new Rect (740, 595, 50, 50), ab2CD);
 			}
 		}
 	}	

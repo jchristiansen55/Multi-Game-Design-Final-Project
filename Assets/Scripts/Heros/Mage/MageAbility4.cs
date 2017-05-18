@@ -34,13 +34,13 @@ public class MageAbility4 : MonoBehaviour {
 
 		bool ab4Key = Input.GetKeyDown (KeyCode.R);
 		if (ab4Timer <= 0) {
-			GUI.Label (new Rect (160, 10, 50, 50), ab4);
+			GUI.Label (new Rect (930, 595, 50, 50), ab4);
 			if (ab4Key) {
 				animationR = true;
 				AbilityFour ();
 			}
 		} else {
-			GUI.Label (new Rect (160, 10, 50, 50), ab4CD);
+			GUI.Label (new Rect (930, 595, 50, 50), ab4CD);
 		}
 	}	
 
