@@ -2,6 +2,8 @@
 using UnityEngine;
 
 public class MageAutoAttack : MonoBehaviour {
+	private Vector3 _direction;
+	private Quaternion _lookRotation;
 
 	public GameObject ability;
 	public GameObject Firepoint;
@@ -59,6 +61,10 @@ public class MageAutoAttack : MonoBehaviour {
 		GameObject bulletGO = Instantiate(ability, Firepoint.transform.position, Firepoint.transform.rotation);
 		Bullet bullet = bulletGO.GetComponent<Bullet>();
 
+		_direction = (target.position - transform.position).normalized;
+		_lookRotation = Quaternion.LookRotation(_direction);
+
+		mage.transform.rotation = _lookRotation;
 	
 		if (bullet != null) {
 			bullet.Seek (target);

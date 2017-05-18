@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SamAuto : MonoBehaviour {
+	private Vector3 _direction;
+	private Quaternion _lookRotation;
 
 	public GameObject Katanami;
+
+	Transform target = null; 
 
 	GameObject minionsTakeDamage; 
 
@@ -35,6 +39,7 @@ public class SamAuto : MonoBehaviour {
 		if ((ab1Timer <= 0) && (Physics.Raycast (ray, out hit) && hit.transform.tag == "Blue") ) {
 
 			minionsTakeDamage = hit.transform.gameObject;
+			target = minionsTakeDamage.transform;
 
 			distance = Vector3.Distance (Katanami.transform.position, hit.transform.position); 
 
@@ -47,6 +52,11 @@ public class SamAuto : MonoBehaviour {
 		}
 	}
 	void AbilityOne(){
+		_direction = (target.position - transform.position).normalized;
+		_lookRotation = Quaternion.LookRotation(_direction);
+
+		Katanami.transform.rotation = _lookRotation;
+
 		ab1Timer = ab1CDTime;
 		charFreezeCD = 1;
 		minionsTakeDamage.GetComponent<Minions> ().TakeDamage(damagePerAttack);
