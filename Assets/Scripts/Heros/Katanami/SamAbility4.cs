@@ -60,6 +60,8 @@ public class SamAbility4 : MonoBehaviour {
 }
 
 	void AbilityFour(){
+		Instantiate(Ability, Firepoint.transform.position, Firepoint.transform.rotation);
+
 		_direction = (target.position - transform.position).normalized;
 		_lookRotation = Quaternion.LookRotation(_direction);
 
@@ -75,13 +77,11 @@ public class SamAbility4 : MonoBehaviour {
 		}
 		transform.position = transform.position + (blinkDirection * blinkLength);
 
+		Instantiate(Ability, Firepoint.transform.position, Firepoint.transform.rotation);
+
+
 		ab4Timer = ab4CDTime;
 		minionsTakeDamage.GetComponent<Minions> ().TakeDamage(damagePerAttack);
 		charFreezeCD = 1.5f;
-	}
-	void Update(){
-		//if ((animationR == true)) {
-			//Ability1.transform.position = Character.transform.position;
-		//}
 	}
 }
