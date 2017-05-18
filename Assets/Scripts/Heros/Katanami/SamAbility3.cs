@@ -9,7 +9,12 @@ public class SamAbility3 : MonoBehaviour {
 	public GameObject Character;
 	GameObject ability3;
 
-	public Texture2D ab3;
+    public AudioClip sam3sound;
+    private AudioSource source;
+    public float volumeLow = .3f;
+    public float volumeHigh = .6f;
+
+    public Texture2D ab3;
 	public Texture2D ab3CD;
 
 	public bool castingE = false;
@@ -22,9 +27,14 @@ public class SamAbility3 : MonoBehaviour {
 	float ab3Timer = 0;
 
 	float speedInAbiltiy; 
-	float oldSpeed; 
+	float oldSpeed;
 
-	void OnGUI(){
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
+
+    void OnGUI(){
 
 		ab3Timer -= Time.deltaTime;
 
@@ -41,7 +51,9 @@ public class SamAbility3 : MonoBehaviour {
 	}	
 
 	void AbilityThree(){
-		continueLength = ab3Length;
+        float vol = Random.Range(volumeLow, volumeHigh);
+        source.PlayOneShot(sam3sound, vol);
+        continueLength = ab3Length;
 		speedInAbiltiy = GetComponent<RecieveMovementKatanami> ().speed;
 		oldSpeed = speedInAbiltiy;
 		speedInAbiltiy = speedInAbiltiy * 2.0f;

@@ -9,8 +9,14 @@ using UnityEngine;
 		public GameObject character; 
 		public GameObject ChanneledAbility; 
 
+        public AudioClip mage2sound;
+         private AudioSource source;
+         public float volumeLow = .3f;
+          public float volumeHigh = .6f;
+
 		public Texture2D ab2;
 		public Texture2D ab2CD;
+
 		
 		public bool isTeleporting = false; 
 		
@@ -23,7 +29,12 @@ using UnityEngine;
 			
 		float ab1Timer = 0;
 
-		void OnGUI(){
+        void Awake()
+        {
+            source = GetComponent<AudioSource>();
+        }
+
+        void OnGUI(){
 
 			ab1Timer -= Time.deltaTime;
 			charFreezeCD -= Time.deltaTime;
@@ -43,7 +54,10 @@ using UnityEngine;
 
 		void AbilityTwo(){
 
-		Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
+        float vol = Random.Range(volumeLow, volumeHigh);
+        source.PlayOneShot(mage2sound, vol);
+
+        Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
 
 		Vector3 blinkDirection = character.transform.forward;
 

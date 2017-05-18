@@ -11,9 +11,14 @@ public class MageAutoAttack : MonoBehaviour {
 
 	 Transform target = null; 
 
-	GameObject minionsTakeDamage; 
+	GameObject minionsTakeDamage;
 
-	public float maxRange;
+    public AudioClip mageAAsound;
+    private AudioSource source;
+    public float volumeLow = .3f;
+    public float volumeHigh = .6f;
+
+    public float maxRange;
 	public float damagePerAttack = 0; 
 
 	public bool AutoAnimation = false; 
@@ -26,7 +31,12 @@ public class MageAutoAttack : MonoBehaviour {
 	float ab1Timer = 0;
 
 
-	void OnGUI(){
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
+
+    void OnGUI(){
 
 		ab1Timer -= Time.deltaTime;
 		charFreezeCD -= Time.deltaTime;
@@ -66,9 +76,12 @@ public class MageAutoAttack : MonoBehaviour {
 
 		mage.transform.rotation = _lookRotation;
 	
-		if (bullet != null) {
+		if (bullet != null)
+        {
 			bullet.Seek (target);
-		}
+            float vol = Random.Range(volumeLow, volumeHigh);
+            source.PlayOneShot(mageAAsound, vol);
+        }
 
 
 		ab1Timer = ab1CDTime;

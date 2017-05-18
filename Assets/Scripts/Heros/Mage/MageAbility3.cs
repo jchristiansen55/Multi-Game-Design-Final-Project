@@ -8,9 +8,15 @@ public class MageAbility3 : MonoBehaviour {
 	public GameObject Character;
 		   GameObject ability3;
 
+
 	public Collider animationCollider;
 
-	public Texture2D ab3;
+    public AudioClip mage3sound;
+    private AudioSource source;
+    public float volumeLow = .3f;
+    public float volumeHigh = .6f;
+
+    public Texture2D ab3;
 	public Texture2D ab3CD;
 
 	bool castingE = false;
@@ -19,7 +25,12 @@ public class MageAbility3 : MonoBehaviour {
 
 	float ab3Timer = 0;
 
-	void OnGUI(){
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
+
+    void OnGUI(){
 
 		ab3Timer -= Time.deltaTime;
 
@@ -36,7 +47,9 @@ public class MageAbility3 : MonoBehaviour {
 	}	
 
 	void AbilityThree(){
-		ability3 = Instantiate (ability, Character.transform.position, Quaternion.identity);
+        float vol = Random.Range(volumeLow, volumeHigh);
+        source.PlayOneShot(mage3sound, vol);
+        ability3 = Instantiate (ability, Character.transform.position, Quaternion.identity);
 		ab3Timer = ab3CDTime;
 	}
 	void Update(){

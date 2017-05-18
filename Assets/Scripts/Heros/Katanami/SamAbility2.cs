@@ -7,6 +7,11 @@ public class SamAbility2 : MonoBehaviour {
 	public GameObject ability;
 	public GameObject Firepoint;
 
+    public AudioClip sam2sound;
+    private AudioSource source;
+    public float volumeLow = .3f;
+    public float volumeHigh = .6f;
+
 	public Texture2D ab2;
 	public Texture2D ab2CD;
 
@@ -18,7 +23,12 @@ public class SamAbility2 : MonoBehaviour {
 
 	float ab1Timer = 0;
 
-	void OnGUI(){
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
+
+    void OnGUI(){
 
 		ab1Timer -= Time.deltaTime;
 		charFreezeCD -= Time.deltaTime;
@@ -41,7 +51,9 @@ public class SamAbility2 : MonoBehaviour {
 	}	
 
 	void AbilityTwo(){
-		Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
+        float vol = Random.Range(volumeLow, volumeHigh);
+        source.PlayOneShot(sam2sound,vol);
+        Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
 		GetComponent<Minions> ().currentHealth =+ 20;
 		ab1Timer = ab2CDTime;
 		charFreezeCD = 2;

@@ -11,9 +11,15 @@ public class SamAbility4 : MonoBehaviour {
 	public GameObject Character; 
 	public GameObject MoveCamWithChar;
 
-	Transform target = null; 
+	Transform target = null;
 
-	GameObject Ability1;
+    public AudioClip sam4sound;
+    private AudioSource source;
+    public float volumeLow = .3f;
+    public float volumeHigh = .6f;
+
+
+    GameObject Ability1;
 	GameObject minionsTakeDamage; 
 
 	public Texture2D ab4;
@@ -30,9 +36,14 @@ public class SamAbility4 : MonoBehaviour {
 	RaycastHit hit;
 
 	float ab4Timer = 0;
-	float distance; 
+	float distance;
 
-	void OnGUI(){
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
+
+    void OnGUI(){
 
 		ab4Timer -= Time.deltaTime;
 		charFreezeCD -= Time.deltaTime;
@@ -60,7 +71,10 @@ public class SamAbility4 : MonoBehaviour {
 }
 
 	void AbilityFour(){
-		Instantiate(Ability, Firepoint.transform.position, Firepoint.transform.rotation);
+        float vol = Random.Range(volumeLow, volumeHigh);
+        source.PlayOneShot(sam4sound, vol);
+
+        Instantiate(Ability, Firepoint.transform.position, Firepoint.transform.rotation);
 
 		_direction = (target.position - transform.position).normalized;
 		_lookRotation = Quaternion.LookRotation(_direction);

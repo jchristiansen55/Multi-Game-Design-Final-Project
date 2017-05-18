@@ -9,7 +9,12 @@ public class MageAbility4 : MonoBehaviour {
 	public GameObject Character; 
 	GameObject Ability1;
 
-	public Texture2D ab4;
+    public AudioClip mage4sound;
+    private AudioSource source;
+    public float volumeLow = .3f;
+    public float volumeHigh = .6f;
+
+    public Texture2D ab4;
 	public Texture2D ab4CD;
 
 	public float  ab4CDTime;
@@ -18,7 +23,12 @@ public class MageAbility4 : MonoBehaviour {
 
 	float ab4Timer = 0;
 
-	void OnGUI(){
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
+
+    void OnGUI(){
 
 		ab4Timer -= Time.deltaTime;
 
@@ -35,7 +45,9 @@ public class MageAbility4 : MonoBehaviour {
 	}	
 
 	void AbilityFour(){
-		Ability1 = Instantiate (Ability, Firepoint.transform.position, Firepoint.transform.rotation);
+        float vol = Random.Range(volumeLow, volumeHigh);
+        source.PlayOneShot(mage4sound, vol);
+        Ability1 = Instantiate (Ability, Firepoint.transform.position, Firepoint.transform.rotation);
 		ab4Timer = ab4CDTime;
 	}
 	void Update(){

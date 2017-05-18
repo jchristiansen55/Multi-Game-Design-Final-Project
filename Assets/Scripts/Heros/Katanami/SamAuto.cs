@@ -10,9 +10,15 @@ public class SamAuto : MonoBehaviour {
 
 	Transform target = null; 
 
-	GameObject minionsTakeDamage; 
+	GameObject minionsTakeDamage;
 
-	public float maxRange;
+    public AudioClip samAAsound;
+    private AudioSource source;
+    public float volumeLow = .3f;
+    public float volumeHigh = .6f;
+
+
+    public float maxRange;
 	public float damagePerAttack = 0; 
 
 	public bool AutoAnimation = false; 
@@ -24,8 +30,13 @@ public class SamAuto : MonoBehaviour {
 
 	float ab1Timer = 0;
 
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
-	void OnGUI(){
+
+    void OnGUI(){
 
 		ab1Timer -= Time.deltaTime;
 		charFreezeCD -= Time.deltaTime;
@@ -38,7 +49,9 @@ public class SamAuto : MonoBehaviour {
 
 		if ((ab1Timer <= 0) && (Physics.Raycast (ray, out hit) && hit.transform.tag == "Blue") ) {
 
-			minionsTakeDamage = hit.transform.gameObject;
+            float vol = Random.Range(volumeLow, volumeHigh);
+            source.PlayOneShot(samAAsound, vol);
+            minionsTakeDamage = hit.transform.gameObject;
 			target = minionsTakeDamage.transform;
 
 			distance = Vector3.Distance (Katanami.transform.position, hit.transform.position); 

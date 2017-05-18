@@ -13,7 +13,12 @@ public class MageAbility1 : MonoBehaviour {
 	public Texture2D ab1;
 	public Texture2D ab1CD;
 
-	public bool animationQ = false; 
+    public AudioClip mage1sound;
+    private AudioSource source;
+    public float volumeLow = .3f;
+    public float volumeHigh = .6f;
+
+    public bool animationQ = false; 
 
 	public float damagePerAttack = 0; 
 	public float  ab1CDTime;
@@ -22,7 +27,12 @@ public class MageAbility1 : MonoBehaviour {
 
     float ab1Timer = 0;
 
-	void OnGUI(){
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
+
+    void OnGUI(){
 
 		ab1Timer -= Time.deltaTime;
 		charFreezeCD -= Time.deltaTime;
@@ -41,7 +51,10 @@ public class MageAbility1 : MonoBehaviour {
 	}	
 
 	void AbilityOne(){
-	 ability = Instantiate(ChanneledAbility, Firepoint.transform.position, Firepoint.transform.rotation);
+        float vol = Random.Range(volumeLow, volumeHigh);
+        source.PlayOneShot(mage1sound, vol);
+
+        ability = Instantiate(ChanneledAbility, Firepoint.transform.position, Firepoint.transform.rotation);
 				ab1Timer = ab1CDTime;
 				charFreezeCD = 8;
 	}
