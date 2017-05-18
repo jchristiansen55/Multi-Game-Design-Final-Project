@@ -49,8 +49,7 @@ public class SamAuto : MonoBehaviour {
 
 		if ((ab1Timer <= 0) && (Physics.Raycast (ray, out hit) && hit.transform.tag == "Blue") ) {
 
-            float vol = Random.Range(volumeLow, volumeHigh);
-            source.PlayOneShot(samAAsound, vol);
+            
             minionsTakeDamage = hit.transform.gameObject;
 			target = minionsTakeDamage.transform;
 
@@ -60,8 +59,10 @@ public class SamAuto : MonoBehaviour {
 				
 				AbilityOne ();
 				AutoAnimation = true;
+                float vol = Random.Range(volumeLow, volumeHigh);
+                source.PlayOneShot(samAAsound, vol);
 
-			}
+            }
 		}
 	}
 	void AbilityOne(){
