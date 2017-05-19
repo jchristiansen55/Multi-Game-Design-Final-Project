@@ -9,7 +9,7 @@ public class Nexus : MonoBehaviour {
     {
        if (GetComponent<Minions>().currentHealth <= 0)
         {
-            Debug.Log("Hello nexus destroyed");
+            SceneManager.LoadScene("moba");
         }
     }
 }
