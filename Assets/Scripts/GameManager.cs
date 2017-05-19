@@ -11,6 +11,7 @@ public class GameManager : Photon.MonoBehaviour {
 
 	public int state = 0;
 	int spawnCounter = 0; 
+
 	void Connect(){
 		PhotonNetwork.ConnectUsingSettings("v1.0");
 		}
@@ -66,15 +67,27 @@ public class GameManager : Photon.MonoBehaviour {
 		}
 	}
 		void Spawn(int team, string challenger){
-			state = 3; 
-				lobbyCam.SetActive (false);
-		if( spawnCounter == 0 ){
-		GameObject userSpawn1 = redSpawn [Random.Range (0, redSpawn.Length)];
-		GameObject userPlayer1 = PhotonNetwork.Instantiate (challenger, userSpawn1.transform.position, userSpawn1.transform.rotation, 0);
-			spawnCounter = 1;
-		} else {
-		GameObject userSpawn2 = blueSpawn [Random.Range (0, blueSpawn.Length)];
-		GameObject userPlayer2 = PhotonNetwork.Instantiate (challenger, userSpawn2.transform.position, userSpawn2.transform.rotation, 0);
+		state = 3; 
+		lobbyCam.SetActive (false);
+		//if (spawnCounter == 0) {
+			GameObject userSpawn1 = redSpawn [Random.Range (0, redSpawn.Length)];
+			GameObject userPlayer1 = PhotonNetwork.Instantiate (challenger, userSpawn1.transform.position, userSpawn1.transform.rotation, 0);
+			
+			Camera camera = userPlayer1.GetComponentInChildren<Camera>();
+			camera.enabled = true;
+
+			//counterPlus (spawnCounter);
+		//}
+		/**else {
+			GameObject userSpawn2 = blueSpawn [Random.Range (0, blueSpawn.Length)];
+			GameObject userPlayer2 = PhotonNetwork.Instantiate (challenger, userSpawn2.transform.position, userSpawn2.transform.rotation, 0);
+			CharacterController controller = userPlayer2.GetComponent<CharacterController> ();
+			Camera camera = userPlayer2.GetComponent<Camera> ();
+		}
+		**/
+	}
+		[PunRPC]
+		public void counterPlus(int spawnCounter){
+			spawnCounter = 1; 
 		}
 	}
-}
