@@ -57,7 +57,7 @@ public class SamAbility1 : MonoBehaviour
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (ab1Key && Physics.Raycast(ray, out hit) && hit.transform.tag == "Blue")
+            if (ab1Key && Physics.Raycast(ray, out hit) && hit.transform.tag == "Red")
             {
                 tar = hit.collider.GetComponent<Minions>();
                 ok = true;

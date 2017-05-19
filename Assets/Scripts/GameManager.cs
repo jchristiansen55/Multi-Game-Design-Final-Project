@@ -10,7 +10,7 @@ public class GameManager : Photon.MonoBehaviour {
 	public GameObject lobbyCam; 
 
 	public int state = 0;
-
+	int spawnCounter = 0; 
 	void Connect(){
 		PhotonNetwork.ConnectUsingSettings("v1.0");
 		}
@@ -68,7 +68,13 @@ public class GameManager : Photon.MonoBehaviour {
 		void Spawn(int team, string challenger){
 			state = 3; 
 				lobbyCam.SetActive (false);
-		GameObject userSpawn = redSpawn [Random.Range (0, redSpawn.Length)];
-		GameObject userPlayer = PhotonNetwork.Instantiate (challenger, userSpawn.transform.position, userSpawn.transform.rotation, 0);
+		if( spawnCounter == 0 ){
+		GameObject userSpawn1 = redSpawn [Random.Range (0, redSpawn.Length)];
+		GameObject userPlayer1 = PhotonNetwork.Instantiate (challenger, userSpawn1.transform.position, userSpawn1.transform.rotation, 0);
+			spawnCounter = 1;
+		} else {
+		GameObject userSpawn2 = blueSpawn [Random.Range (0, blueSpawn.Length)];
+		GameObject userPlayer2 = PhotonNetwork.Instantiate (challenger, userSpawn2.transform.position, userSpawn2.transform.rotation, 0);
+		}
 	}
 }

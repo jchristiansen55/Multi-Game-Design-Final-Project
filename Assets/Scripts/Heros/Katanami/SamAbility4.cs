@@ -56,7 +56,7 @@ public class SamAbility4 : MonoBehaviour {
 		} else {
 			GUI.Label (new Rect (930, 595, 50, 50), ab4CD);
 		}
-		if ((ab4Timer <= 0) && (Physics.Raycast (ray, out hit) && hit.transform.tag == "Blue") ) {
+		if ((ab4Timer <= 0) && (Physics.Raycast (ray, out hit) && hit.transform.tag == "Red") ) {
 
 			minionsTakeDamage = hit.transform.gameObject;
 			target = minionsTakeDamage.transform;

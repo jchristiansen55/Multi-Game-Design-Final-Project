@@ -47,7 +47,7 @@ public class SamAuto : MonoBehaviour {
 
 		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 
-		if ((ab1Timer <= 0) && (Physics.Raycast (ray, out hit) && hit.transform.tag == "Blue") ) {
+		if ((ab1Timer <= 0) && (Physics.Raycast (ray, out hit) && hit.transform.tag == "Red") ) {
 
             
             minionsTakeDamage = hit.transform.gameObject;
