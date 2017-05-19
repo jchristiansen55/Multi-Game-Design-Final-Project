@@ -102,7 +102,7 @@ public class TurretAttacksRed : MonoBehaviour
 
     private void OnDestroy()
     {
-        //ScoreManager.redCS +=1;
+        ScoreManager.blueTurretsLeft -= 1;
         ScoreManager.redValue += 300;
     }
 
