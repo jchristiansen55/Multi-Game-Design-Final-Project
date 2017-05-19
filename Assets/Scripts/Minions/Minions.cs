@@ -27,21 +27,10 @@ public class Minions : MonoBehaviour {
     {
         currentHealth -= amount;
         
-        if (currentHealth <= 0)
-        {
-            Die();
-            //PlayerStats.Money += 10;
-        }
+        
     }
 
-    void Die()
-    {
-        if (nexus)
-        {
-            SceneManager.LoadScene("moba");
-        }
-        Destroy(gameObject);
-    }
+    
 
     // Update is called once per frame
     void Update ()

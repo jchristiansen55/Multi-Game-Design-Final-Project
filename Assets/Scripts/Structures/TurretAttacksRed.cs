@@ -83,7 +83,27 @@ public class TurretAttacksRed : MonoBehaviour
             }
             fireCountdown -= Time.deltaTime;
         }
+        isDying();
+    }
 
+
+    void isDying()
+    {
+        if (GetComponent<Minions>().currentHealth <= 0)
+        {
+
+           // anim.SetBool("death", true);
+
+            Destroy(gameObject, 1f);
+
+        }
+
+    }
+
+    private void OnDestroy()
+    {
+        //ScoreManager.redCS +=1;
+        ScoreManager.redValue += 300;
     }
 
     void Shoot ()

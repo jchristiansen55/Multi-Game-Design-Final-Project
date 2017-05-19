@@ -95,20 +95,37 @@ public class MinionAttackRedCanon : MonoBehaviour
             }
             fireCountdown -= Time.deltaTime;
         }
+        isDying();
+
+    }
+
+
+    void isDying()
+    {
+        if (GetComponent<Minions>().currentHealth <= 0)
+        {
+
+            anim.SetBool("death", true);
+
+            Destroy(gameObject, 1f);
+
+        }
 
     }
 
     private void OnDestroy()
     {
-        anim.SetBool("death", true);
+        ScoreManager.blueCS += 1;
+        ScoreManager.blueValue += 25;
     }
     void Shoot()
     {
         anim.SetBool("shoot", true);
         targetEnemy.TakeDamage(damage);
         Debug.Log("DMG'D MINION");
-    }
+        anim.SetBool("shoot", false);
 
+    }
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
