@@ -7,6 +7,7 @@ public class magedmg4 : MonoBehaviour {
     private Minions tar;
 
     public float AbilityDMG = 0f;
+    public float AbilityRange = 0f;
 
     // Use this for initialization
     void Start () {
@@ -16,7 +17,7 @@ public class magedmg4 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        Collider[] col = Physics.OverlapSphere(transform.position, 6.0f);
+        Collider[] col = Physics.OverlapSphere(transform.position, AbilityRange);
         foreach (Collider hit in col)
         {
             tar = hit.GetComponent<Minions>();

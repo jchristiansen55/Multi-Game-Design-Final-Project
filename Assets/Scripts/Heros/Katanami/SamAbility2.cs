@@ -48,13 +48,20 @@ public class SamAbility2 : MonoBehaviour {
 				GUI.Label (new Rect (740, 595, 50, 50), ab2CD);
 			}
 		}
-	}	
+	}
 
-	void AbilityTwo(){
+    void AbilityTwo() {
         float vol = Random.Range(volumeLow, volumeHigh);
-        source.PlayOneShot(sam2sound,vol);
-        Instantiate (ability, Firepoint.transform.position, Quaternion.identity);
-		GetComponent<Minions> ().currentHealth =+ 20;
+        source.PlayOneShot(sam2sound, vol);
+        Instantiate(ability, Firepoint.transform.position, Quaternion.identity);
+        if (GetComponent<Minions>().currentHealth >= GetComponent<Minions>().startHealth - 20)
+        {
+            GetComponent<Minions>().currentHealth = GetComponent<Minions>().startHealth;
+        }
+        else
+        {
+            GetComponent<Minions>().currentHealth += 20;
+        }
 		ab1Timer = ab2CDTime;
 		charFreezeCD = 2;
 	}
