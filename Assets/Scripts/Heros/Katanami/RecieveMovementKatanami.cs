@@ -36,9 +36,12 @@ public class RecieveMovementKatanami : MonoBehaviour {
 					whileRunning = false; 
 				} 
 			}
+
 		}
+    
 		[PunRPC]
 		public void RecievedMove(Vector3 movePos){
 			newposition = movePos;
 		}
+    
 	}
