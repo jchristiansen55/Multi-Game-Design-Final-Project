@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System.Collections.Generic;
 
 public class GameManager : Photon.MonoBehaviour {
 
@@ -75,7 +75,8 @@ public class GameManager : Photon.MonoBehaviour {
 			
 			Camera camera = userPlayer1.GetComponentInChildren<Camera>();
 			camera.enabled = true;
-
+			
+			userPlayer1.GetComponent<SendInfo>().enabled = true;
 			//counterPlus (spawnCounter);
 		//}
 		/**else {

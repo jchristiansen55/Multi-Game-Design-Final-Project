@@ -1,19 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon;
 
-public class KatanamiNetworkManager : MonoBehaviour {
-	public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-	{
-		if (stream.isWriting)
+public class KatanamiNetworkManager : Photon.MonoBehaviour {
+		public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
 		{
-			Vector3 pos = transform.localPosition;
-			stream.Serialize(ref pos);
-		}
-		else
-		{
-			Vector3 pos = Vector3.zero;
-			stream.Serialize(ref pos);  // pos gets filled-in. must be used somewhere
+			if (stream.isWriting)
+			{
+				// We own this player: send the others our data
+				stream.SendNext(transform.position);
+				stream.SendNext(transform.rotation);
+			}
+			else
+			{
+				// Network player, receive data
+				this.transform.position = (Vector3) stream.ReceiveNext();
+				this.transform.rotation = (Quaternion) stream.ReceiveNext();
+			}
 		}
 	}
-}
