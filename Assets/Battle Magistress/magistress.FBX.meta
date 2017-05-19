@@ -1,0 +1,1573 @@
+fileFormatVersion: 2
+guid: 32bf01f424b0fc94fb13f2911ce6b28a
+timeCreated: 1454534255
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: _Magistress
+    100002: Magistress
+    100004: //RootNode
+    100006: Magistress Belt1_main_pos
+    100008: Magistress Belt1_rotate
+    100010: Magistress Belt2
+    100012: Magistress Belt2_main_pos
+    100014: Magistress BreastL
+    100016: Magistress BreastR
+    100018: Magistress Brow1L
+    100020: Magistress Brow1R
+    100022: Magistress CollarL
+    100024: Magistress CollarR
+    100026: Magistress Drape
+    100028: Magistress Drape02
+    100030: Magistress Drape03
+    100032: Magistress EyeL
+    100034: Magistress EyelidBotL
+    100036: Magistress EyelidBotR
+    100038: Magistress EyelidTopL
+    100040: Magistress EyelidTopR
+    100042: Magistress EyeR
+    100044: Magistress Hair1
+    100046: Magistress Hair102
+    100048: Magistress Hair2
+    100050: Magistress Head
+    100052: Magistress Jaw
+    100054: Magistress L Calf
+    100056: Magistress L Clavicle
+    100058: Magistress L Finger0
+    100060: Magistress L Finger01
+    100062: Magistress L Finger02
+    100064: Magistress L Finger1
+    100066: Magistress L Finger11
+    100068: Magistress L Finger12
+    100070: Magistress L Finger2
+    100072: Magistress L Finger21
+    100074: Magistress L Finger22
+    100076: Magistress L Finger3
+    100078: Magistress L Finger31
+    100080: Magistress L Finger32
+    100082: Magistress L Finger4
+    100084: Magistress L Finger41
+    100086: Magistress L Finger42
+    100088: Magistress L Foot
+    100090: Magistress L Forearm
+    100092: Magistress L Hand
+    100094: Magistress L Thigh
+    100096: Magistress L Toe0
+    100098: Magistress L Toe01
+    100100: Magistress L UpperArm
+    100102: Magistress L_Arm_Armor1
+    100104: Magistress L_Arm_Armor2
+    100106: Magistress L_Shoulderpad1
+    100108: Magistress L_Shoulderpad2
+    100110: Magistress Neck
+    100112: Magistress Pelvis
+    100114: Magistress R Calf
+    100116: Magistress R Clavicle
+    100118: Magistress R Finger0
+    100120: Magistress R Finger01
+    100122: Magistress R Finger02
+    100124: Magistress R Finger1
+    100126: Magistress R Finger11
+    100128: Magistress R Finger12
+    100130: Magistress R Finger2
+    100132: Magistress R Finger21
+    100134: Magistress R Finger22
+    100136: Magistress R Finger3
+    100138: Magistress R Finger31
+    100140: Magistress R Finger32
+    100142: Magistress R Finger4
+    100144: Magistress R Finger41
+    100146: Magistress R Finger42
+    100148: Magistress R Foot
+    100150: Magistress R Forearm
+    100152: Magistress R Hand
+    100154: Magistress R Thigh
+    100156: Magistress R Toe0
+    100158: Magistress R Toe01
+    100160: Magistress R UpperArm
+    100162: Magistress R_Arm_Armor1
+    100164: Magistress R_Arm_Armor2
+    100166: Magistress R_Shoulderpad1
+    100168: Magistress R_Shoulderpad2
+    100170: Magistress Skirt
+    100172: Magistress Skirt02
+    100174: Magistress Skirt03
+    100176: Magistress Skirt04
+    100178: Magistress SkirtL
+    100180: Magistress SkirtL02
+    100182: Magistress SkirtR
+    100184: Magistress SkirtR02
+    100186: Magistress Spine
+    100188: Magistress Spine1
+    100190: Magistress Spine2
+    100192: Magistress Spine3
+    100194: Magistress Waist_Armor1
+    100196: Magistress Waist_Armor2
+    100198: Point001
+    100200: Magistress_geo
+    400000: _Magistress
+    400002: Magistress
+    400004: //RootNode
+    400006: Magistress Belt1_main_pos
+    400008: Magistress Belt1_rotate
+    400010: Magistress Belt2
+    400012: Magistress Belt2_main_pos
+    400014: Magistress BreastL
+    400016: Magistress BreastR
+    400018: Magistress Brow1L
+    400020: Magistress Brow1R
+    400022: Magistress CollarL
+    400024: Magistress CollarR
+    400026: Magistress Drape
+    400028: Magistress Drape02
+    400030: Magistress Drape03
+    400032: Magistress EyeL
+    400034: Magistress EyelidBotL
+    400036: Magistress EyelidBotR
+    400038: Magistress EyelidTopL
+    400040: Magistress EyelidTopR
+    400042: Magistress EyeR
+    400044: Magistress Hair1
+    400046: Magistress Hair102
+    400048: Magistress Hair2
+    400050: Magistress Head
+    400052: Magistress Jaw
+    400054: Magistress L Calf
+    400056: Magistress L Clavicle
+    400058: Magistress L Finger0
+    400060: Magistress L Finger01
+    400062: Magistress L Finger02
+    400064: Magistress L Finger1
+    400066: Magistress L Finger11
+    400068: Magistress L Finger12
+    400070: Magistress L Finger2
+    400072: Magistress L Finger21
+    400074: Magistress L Finger22
+    400076: Magistress L Finger3
+    400078: Magistress L Finger31
+    400080: Magistress L Finger32
+    400082: Magistress L Finger4
+    400084: Magistress L Finger41
+    400086: Magistress L Finger42
+    400088: Magistress L Foot
+    400090: Magistress L Forearm
+    400092: Magistress L Hand
+    400094: Magistress L Thigh
+    400096: Magistress L Toe0
+    400098: Magistress L Toe01
+    400100: Magistress L UpperArm
+    400102: Magistress L_Arm_Armor1
+    400104: Magistress L_Arm_Armor2
+    400106: Magistress L_Shoulderpad1
+    400108: Magistress L_Shoulderpad2
+    400110: Magistress Neck
+    400112: Magistress Pelvis
+    400114: Magistress R Calf
+    400116: Magistress R Clavicle
+    400118: Magistress R Finger0
+    400120: Magistress R Finger01
+    400122: Magistress R Finger02
+    400124: Magistress R Finger1
+    400126: Magistress R Finger11
+    400128: Magistress R Finger12
+    400130: Magistress R Finger2
+    400132: Magistress R Finger21
+    400134: Magistress R Finger22
+    400136: Magistress R Finger3
+    400138: Magistress R Finger31
+    400140: Magistress R Finger32
+    400142: Magistress R Finger4
+    400144: Magistress R Finger41
+    400146: Magistress R Finger42
+    400148: Magistress R Foot
+    400150: Magistress R Forearm
+    400152: Magistress R Hand
+    400154: Magistress R Thigh
+    400156: Magistress R Toe0
+    400158: Magistress R Toe01
+    400160: Magistress R UpperArm
+    400162: Magistress R_Arm_Armor1
+    400164: Magistress R_Arm_Armor2
+    400166: Magistress R_Shoulderpad1
+    400168: Magistress R_Shoulderpad2
+    400170: Magistress Skirt
+    400172: Magistress Skirt02
+    400174: Magistress Skirt03
+    400176: Magistress Skirt04
+    400178: Magistress SkirtL
+    400180: Magistress SkirtL02
+    400182: Magistress SkirtR
+    400184: Magistress SkirtR02
+    400186: Magistress Spine
+    400188: Magistress Spine1
+    400190: Magistress Spine2
+    400192: Magistress Spine3
+    400194: Magistress Waist_Armor1
+    400196: Magistress Waist_Armor2
+    400198: Point001
+    400200: Magistress_geo
+    4300000: _Magistress
+    4300002: Magistress_geo
+    7400000: magistress22_final
+    9500000: //RootNode
+    13700000: _Magistress
+    13700002: Magistress_geo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: <Root Transform>
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: magistress22_final
+      takeName: magistress22_final
+      firstFrame: -2
+      lastFrame: 89
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: _Magistress
+        weight: 1
+      - path: Magistress
+        weight: 1
+      - path: Magistress/Magistress Pelvis
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Belt1_main_pos
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Belt1_main_pos/Magistress Belt1_rotate
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Belt1_main_pos/Magistress SkirtR
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Belt1_main_pos/Magistress SkirtR/Magistress
+          SkirtR02
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Belt2_main_pos
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Belt2_main_pos/Magistress Belt2
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Belt2_main_pos/Magistress SkirtL
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Belt2_main_pos/Magistress SkirtL/Magistress
+          SkirtL02
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Drape
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Drape/Magistress Drape02
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Drape/Magistress Drape02/Magistress
+          Drape03
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Skirt
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Skirt/Magistress Skirt02
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Skirt/Magistress Skirt02/Magistress
+          Skirt03
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Skirt/Magistress Skirt02/Magistress
+          Skirt03/Magistress Skirt04
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress L Thigh
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress L Thigh/Magistress
+          L Calf
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress L Thigh/Magistress
+          L Calf/Magistress L Foot
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress L Thigh/Magistress
+          L Calf/Magistress L Foot/Magistress L Toe0
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress L Thigh/Magistress
+          L Calf/Magistress L Foot/Magistress L Toe0/Magistress L Toe01
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress R Thigh
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress R Thigh/Magistress
+          R Calf
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress R Thigh/Magistress
+          R Calf/Magistress R Foot
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress R Thigh/Magistress
+          R Calf/Magistress R Foot/Magistress R Toe0
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress R Thigh/Magistress
+          R Calf/Magistress R Foot/Magistress R Toe0/Magistress R Toe01
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress BreastL
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress BreastR
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress Head
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress Head/Magistress Brow1L
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress Head/Magistress Brow1R
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress Head/Magistress EyeL
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress Head/Magistress EyelidBotL
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress Head/Magistress EyelidBotR
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress Head/Magistress EyelidTopL
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress Head/Magistress EyelidTopR
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress Head/Magistress EyeR
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress Head/Magistress Hair1
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress Head/Magistress Hair1/Magistress
+          Hair102
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress Head/Magistress Hair2
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress Head/Magistress Jaw
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          CollarL
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger0
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger0/Magistress
+          L Finger01
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger0/Magistress
+          L Finger01/Magistress L Finger02
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger1
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger1/Magistress
+          L Finger11
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger1/Magistress
+          L Finger11/Magistress L Finger12
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger2
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger2/Magistress
+          L Finger21
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger2/Magistress
+          L Finger21/Magistress L Finger22
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger3
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger3/Magistress
+          L Finger31
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger3/Magistress
+          L Finger31/Magistress L Finger32
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger4
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger4/Magistress
+          L Finger41
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L Forearm/Magistress L Hand/Magistress L Finger4/Magistress
+          L Finger41/Magistress L Finger42
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L_Arm_Armor1
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L UpperArm/Magistress L_Arm_Armor2
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L_Shoulderpad1
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress L Clavicle/Magistress
+          L_Shoulderpad2
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          CollarR
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger0
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger0/Magistress
+          R Finger01
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger0/Magistress
+          R Finger01/Magistress R Finger02
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger1
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger1/Magistress
+          R Finger11
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger1/Magistress
+          R Finger11/Magistress R Finger12
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger2
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger2/Magistress
+          R Finger21
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger2/Magistress
+          R Finger21/Magistress R Finger22
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger3
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger3/Magistress
+          R Finger31
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger3/Magistress
+          R Finger31/Magistress R Finger32
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger4
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger4/Magistress
+          R Finger41
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R Forearm/Magistress R Hand/Magistress R Finger4/Magistress
+          R Finger41/Magistress R Finger42
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R_Arm_Armor1
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R UpperArm/Magistress R_Arm_Armor2
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R_Shoulderpad1
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Spine/Magistress Spine1/Magistress
+          Spine2/Magistress Spine3/Magistress Neck/Magistress R Clavicle/Magistress
+          R_Shoulderpad2
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Waist_Armor1
+        weight: 1
+      - path: Magistress/Magistress Pelvis/Magistress Waist_Armor1/Magistress Waist_Armor2
+        weight: 1
+      - path: Point001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Magistress Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress Spine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress Spine2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress EyeL
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress EyeR
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress Jaw
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger0
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger01
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger02
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger11
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger12
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger2
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger21
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger22
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger3
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger31
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger32
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger4
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger41
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress L Finger42
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger0
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger01
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger02
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger11
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger12
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger2
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger21
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger22
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger3
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger31
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger32
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger4
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger41
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Magistress R Finger42
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: magistress(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: _Magistress
+      position: {x: 0, y: 0, z: .0289342869}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress
+      position: {x: 0, y: 1.05767107, z: 0}
+      rotation: {x: -.500000358, y: .499999672, z: .499999672, w: .500000358}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress Pelvis
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.5, y: .5, z: .499999315, w: .500000715}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress Belt1_main_pos
+      position: {x: .0251108538, y: .107124031, z: -.0769128799}
+      rotation: {x: -.0867574513, y: -.0924908593, z: -.67917949, w: .722934186}
+      scale: {x: 1.00000012, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: Magistress Belt1_rotate
+      position: {x: .00355852116, y: -.0569657125, z: -.0182249211}
+      rotation: {x: -.153771549, y: -.0509741567, z: .0301754717, w: .986329257}
+      scale: {x: 1.00000024, y: 1.00000036, z: 1}
+      transformModified: 1
+    - name: Magistress SkirtR
+      position: {x: .00480478257, y: -.0236022174, z: .0477106273}
+      rotation: {x: .699704349, y: -.570841849, z: .330768943, w: .274126559}
+      scale: {x: 1.00000012, y: .99999994, z: 1.00000024}
+      transformModified: 1
+    - name: Magistress SkirtR02
+      position: {x: -.14842616, y: -.00012130737, z: -2.68554686e-05}
+      rotation: {x: .107933827, y: -.0165768284, z: .14340587, w: .983621001}
+      scale: {x: 1.00000024, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Magistress Belt2_main_pos
+      position: {x: .0415971354, y: .10495694, z: .0829040632}
+      rotation: {x: .706311107, y: -.705748916, z: -.0389928371, w: -.0390209034}
+      scale: {x: 1.00000012, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Magistress Belt2
+      position: {x: .0122810071, y: .0177098084, z: -.0367663167}
+      rotation: {x: .985241175, y: -.0611866936, z: .159722954, w: .00667636283}
+      scale: {x: .999999881, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: Magistress SkirtL
+      position: {x: .00119043351, y: .0114452364, z: .0099446103}
+      rotation: {x: .192934752, y: -.34693262, z: .570269883, w: .719170511}
+      scale: {x: 1.00000012, y: .999999762, z: .99999994}
+      transformModified: 1
+    - name: Magistress SkirtL02
+      position: {x: -.11810413, y: -.000102996826, z: 5.43975802e-05}
+      rotation: {x: -.207388386, y: -.0546041355, z: .244689599, w: .945587397}
+      scale: {x: 1, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: Magistress Drape
+      position: {x: .0515164919, y: .101790823, z: 1.46732777e-08}
+      rotation: {x: 7.18259685e-07, y: -7.01653278e-07, z: .999928296, w: -.0119744986}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress Drape02
+      position: {x: -.151484147, y: -8.62121597e-05, z: -2.39097048e-10}
+      rotation: {x: 1.64868119e-13, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress Drape03
+      position: {x: -.108257294, y: -.000107860564, z: -2.99205549e-10}
+      rotation: {x: 1.64868119e-13, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress Skirt
+      position: {x: .02478485, y: -.142982587, z: 2.0947715e-07}
+      rotation: {x: 6.59879333e-07, y: -6.82166842e-07, z: .999870896, w: .0160711482}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Magistress Skirt02
+      position: {x: -.222001031, y: -.000114383693, z: -3.17268128e-10}
+      rotation: {x: -8.29490217e-14, y: -1.8991696e-07, z: .0684730858, w: .997653008}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Magistress Skirt03
+      position: {x: -.145025715, y: -.000116548537, z: -3.23270799e-10}
+      rotation: {x: 4.46303313e-13, y: 8.13211543e-08, z: -.029319711, w: .999570131}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress Skirt04
+      position: {x: -.146613494, y: -.000100498197, z: -2.78741918e-10}
+      rotation: {x: 1.43318801e-13, y: 9.10159983e-08, z: -.0328151174, w: .999461472}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Magistress Spine
+      position: {x: -.0890405253, y: -.0327689722, z: 2.60275101e-07}
+      rotation: {x: -2.14394663e-06, y: 7.65593825e-07, z: -.110206932, w: .993908644}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress L Thigh
+      position: {x: .0796989426, y: .0514789745, z: .0979394019}
+      rotation: {x: -.121143505, y: .991000235, z: 3.49452675e-05, w: .05694535}
+      scale: {x: .99999994, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: Magistress L Calf
+      position: {x: -.441199422, y: -2.38418574e-09, z: 0}
+      rotation: {x: -1.80235582e-09, y: 7.36303152e-09, z: .0546886846, w: .998503447}
+      scale: {x: .99999994, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Magistress L Foot
+      position: {x: -.421722472, y: 0, z: 0}
+      rotation: {x: -.00617458439, y: .0511385053, z: .192549407, w: .979934454}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress L Toe0
+      position: {x: -.106606215, y: .149852201, z: 0}
+      rotation: {x: -1.70641812e-08, y: 1.39675356e-08, z: -.799098849, w: .601199687}
+      scale: {x: 1, y: .999999881, z: .99999994}
+      transformModified: 1
+    - name: Magistress L Toe01
+      position: {x: -.0355966985, y: 0, z: 0}
+      rotation: {x: 4.89248052e-11, y: 5.5080418e-10, z: -.0884759724, w: .996078312}
+      scale: {x: 1, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Magistress R Thigh
+      position: {x: .0796989426, y: .0514795296, z: -.0979392901}
+      rotation: {x: -.121143661, y: .991000235, z: -3.22060478e-05, w: -.0569451079}
+      scale: {x: .99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress R Calf
+      position: {x: -.441199481, y: 0, z: 0}
+      rotation: {x: 1.33739142e-09, y: -7.38849826e-09, z: .0546886809, w: .998503447}
+      scale: {x: .999999881, y: .999999881, z: .99999994}
+      transformModified: 1
+    - name: Magistress R Foot
+      position: {x: -.421722412, y: 4.76837148e-09, z: 0}
+      rotation: {x: .00617456203, y: -.0511385836, z: .192549422, w: .979934394}
+      scale: {x: 1, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: Magistress R Toe0
+      position: {x: -.10660623, y: .149852186, z: 0}
+      rotation: {x: 1.92985805e-08, y: -1.34519516e-08, z: -.799098849, w: .601199687}
+      scale: {x: 1.00000024, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Magistress R Toe01
+      position: {x: -.0355967097, y: 0, z: 0}
+      rotation: {x: -9.98482408e-10, y: -7.14816983e-10, z: -.0884759799, w: .996078312}
+      scale: {x: .99999994, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Magistress Spine1
+      position: {x: -.131493673, y: -7.68470782e-05, z: -2.13112791e-10}
+      rotation: {x: 9.85919178e-14, y: -6.63339677e-07, z: .239161953, w: .970979691}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Magistress Spine2
+      position: {x: -.109006956, y: -6.34002645e-05, z: -1.75859896e-10}
+      rotation: {x: 1.02488147e-13, y: 3.55649021e-08, z: -.0128226532, w: .999917805}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Magistress BreastL
+      position: {x: .0283811949, y: .124605387, z: .0684111789}
+      rotation: {x: .0619072802, y: .0526476316, z: -.759786606, w: .645073712}
+      scale: {x: 1.00000012, y: 1.00000012, z: .99999994}
+      transformModified: 1
+    - name: Magistress BreastR
+      position: {x: .0283811949, y: .124605767, z: -.0684104934}
+      rotation: {x: -.0619074628, y: -.0526432656, z: -.759786844, w: .645073712}
+      scale: {x: 1.00000012, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: Magistress Spine3
+      position: {x: -.0796362311, y: -7.59696923e-05, z: -2.10784487e-10}
+      rotation: {x: 1.26479854e-13, y: 4.82903658e-07, z: -.174107179, w: .984726727}
+      scale: {x: 1.00000024, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: Magistress Neck
+      position: {x: -.086864166, y: -.0135367578, z: 7.05804248e-10}
+      rotation: {x: -4.66812292e-14, y: 5.95759744e-08, z: -.0214796495, w: .99976927}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Magistress Head
+      position: {x: -.0915142819, y: .000135478971, z: 2.31346342e-09}
+      rotation: {x: -2.84660777e-13, y: -9.71981251e-08, z: .0350447223, w: .999385774}
+      scale: {x: .999999881, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Magistress Brow1L
+      position: {x: -.0753921494, y: .0950459242, z: .0112412143}
+      rotation: {x: .0546152294, y: .0636628941, z: -.667752266, w: .73964256}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress Brow1R
+      position: {x: -.0753921494, y: .0950459838, z: -.0112406891}
+      rotation: {x: -.0546152256, y: -.0636591762, z: -.667752624, w: .73964256}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress EyeL
+      position: {x: -.0585627742, y: .0741337016, z: .0276753083}
+      rotation: {x: 1.27463025e-12, y: 1.84087321e-06, z: -.663713038, w: .74798739}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress EyelidBotL
+      position: {x: -.0584040806, y: .0741655529, z: .0276735853}
+      rotation: {x: -.551945746, y: .828925729, z: .0830575004, w: .0365995094}
+      scale: {x: .999999881, y: 1, z: .999999821}
+      transformModified: 1
+    - name: Magistress EyelidBotR
+      position: {x: -.0584040806, y: .0741657019, z: -.02767317}
+      rotation: {x: -.551945746, y: .828926265, z: -.0830526501, w: -.0365993604}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Magistress EyelidTopL
+      position: {x: -.0584962443, y: .0741368085, z: .0276746005}
+      rotation: {x: .0563610941, y: .0494373292, z: -.555249214, w: .828298092}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Magistress EyelidTopR
+      position: {x: -.0584962443, y: .0741369724, z: -.0276741851}
+      rotation: {x: -.0563611016, y: -.0494342446, z: -.555249453, w: .828298092}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Magistress EyeR
+      position: {x: -.0585627742, y: .0741338506, z: -.0276748929}
+      rotation: {x: 1.27463025e-12, y: 1.84087321e-06, z: -.663713038, w: .74798739}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress Hair1
+      position: {x: -.118959039, y: .0942782015, z: -.0379547961}
+      rotation: {x: .145671144, y: .314735264, z: .931605279, w: -.108781114}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Magistress Hair102
+      position: {x: -.0507191457, y: -4.1427611e-05, z: -3.81469718e-08}
+      rotation: {x: 2.28705357e-08, y: 2.89725136e-07, z: -.0978469625, w: .995201468}
+      scale: {x: .999999821, y: 1.00000012, z: .999999881}
+      transformModified: 1
+    - name: Magistress Hair2
+      position: {x: -.0918354765, y: .0932871923, z: .0488162525}
+      rotation: {x: -.0816972628, y: -.329485863, z: .936799288, w: -.0846861303}
+      scale: {x: .99999994, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Magistress Jaw
+      position: {x: -.0314115882, y: .0244660936, z: 5.68894372e-08}
+      rotation: {x: -1.61769079e-12, y: -2.51618212e-06, z: .907190144, w: -.420720905}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Magistress L Clavicle
+      position: {x: .0252949521, y: .056768015, z: .00712404074}
+      rotation: {x: -.622106552, y: -.105246045, z: .773719668, w: .0571379215}
+      scale: {x: .99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress CollarL
+      position: {x: -.0680169314, y: .0117589757, z: .0537597649}
+      rotation: {x: .403077126, y: .53888458, z: -.402895451, w: .620328546}
+      scale: {x: 1.00000036, y: .999999821, z: 1.00000036}
+      transformModified: 1
+    - name: Magistress L UpperArm
+      position: {x: -.152388647, y: 1.90734859e-08, z: 0}
+      rotation: {x: -.0300515778, y: .0833892301, z: .122346178, w: .988521397}
+      scale: {x: .99999994, y: .999999881, z: 1.00000012}
+      transformModified: 1
+    - name: Magistress L Forearm
+      position: {x: -.251192003, y: -4.76837148e-09, z: -7.62939436e-08}
+      rotation: {x: -4.6555565e-10, y: -9.91493086e-12, z: .0212921537, w: .999773324}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Magistress L Hand
+      position: {x: -.253973067, y: 0, z: 7.62939436e-08}
+      rotation: {x: -.726137221, y: -.00490845367, z: -.0232093781, w: .687140524}
+      scale: {x: .99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress L Finger0
+      position: {x: -.0167541504, y: .0108642578, z: -.0226005502}
+      rotation: {x: .639521062, y: -.321561873, z: .195449904, w: .670380652}
+      scale: {x: 1, y: .999999821, z: .99999994}
+      transformModified: 1
+    - name: Magistress L Finger01
+      position: {x: -.0385215767, y: 3.81469718e-08, z: 3.81469718e-08}
+      rotation: {x: -5.96046235e-08, y: 2.78651623e-06, z: -.0361120813, w: .999347806}
+      scale: {x: 1.00000012, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: Magistress L Finger02
+      position: {x: -.034611281, y: 1.90734859e-08, z: -7.62939436e-08}
+      rotation: {x: 1.31335742e-09, y: -7.56674989e-09, z: -.0730561316, w: .997327864}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Magistress L Finger1
+      position: {x: -.0854965225, y: .00311614992, z: -.0261679851}
+      rotation: {x: .000771199877, y: -.0351076163, z: -.0997703969, w: .994390666}
+      scale: {x: 1, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: Magistress L Finger11
+      position: {x: -.0368196853, y: 0, z: -4.76837148e-09}
+      rotation: {x: 5.21540464e-08, y: -7.9721184e-07, z: -.0392112732, w: .999230981}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress L Finger12
+      position: {x: -.0262898244, y: 0, z: 0}
+      rotation: {x: 1.28026811e-09, y: -3.96335098e-09, z: -.150626138, w: .988590837}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Magistress L Finger2
+      position: {x: -.0910237134, y: .00330368034, z: -.00857761968}
+      rotation: {x: -.00373445544, y: -.0230055824, z: -.0963104591, w: .995078504}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Magistress L Finger21
+      position: {x: -.0355164334, y: -3.81469718e-08, z: -4.76837148e-09}
+      rotation: {x: 1.34110408e-07, y: -2.86847239e-07, z: -.0340432413, w: .999420345}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress L Finger22
+      position: {x: -.0311391447, y: 1.90734859e-08, z: 9.53674295e-09}
+      rotation: {x: 1.30454009e-10, y: 1.85807114e-09, z: -.0700369626, w: .997544408}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Magistress L Finger3
+      position: {x: -.0887293965, y: .00612274138, z: .0105617512}
+      rotation: {x: -.0653737411, y: -.00993979536, z: -.0914022326, w: .993616223}
+      scale: {x: .999999881, y: 1, z: .999999881}
+      transformModified: 1
+    - name: Magistress L Finger31
+      position: {x: -.0353505686, y: 0, z: 2.38418574e-09}
+      rotation: {x: -4.09781791e-08, y: -5.97908866e-07, z: -.0328667201, w: .999459803}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Magistress L Finger32
+      position: {x: -.0257896408, y: 0, z: 0}
+      rotation: {x: -1.93486199e-11, y: -1.41612122e-09, z: -.177859604, w: .984055877}
+      scale: {x: 1.00000012, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Magistress L Finger4
+      position: {x: -.0821905509, y: .0114003755, z: .0284315087}
+      rotation: {x: -.110068008, y: .00345416646, z: -.0847031474, w: .990302205}
+      scale: {x: .999999821, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Magistress L Finger41
+      position: {x: -.0307412706, y: 3.81469718e-08, z: -4.76837148e-09}
+      rotation: {x: -1.59256103e-07, y: 5.15952536e-07, z: -.0327621885, w: .999463201}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Magistress L Finger42
+      position: {x: -.0223763268, y: 1.90734859e-08, z: -9.53674295e-09}
+      rotation: {x: -2.17097327e-08, y: -5.93520388e-09, z: -.159080818, w: .987265587}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000024}
+      transformModified: 1
+    - name: Magistress L_Arm_Armor1
+      position: {x: -.0582048036, y: .00325169088, z: .0189015958}
+      rotation: {x: -.11804527, y: .697184801, z: -.697182834, w: -.118045658}
+      scale: {x: -1, y: -1, z: -1.00000012}
+      transformModified: 1
+    - name: Magistress L_Arm_Armor2
+      position: {x: -.0155828856, y: .00555590121, z: .0307981875}
+      rotation: {x: -.142430916, y: .692614436, z: -.692612469, w: -.142431289}
+      scale: {x: -1.00000012, y: -1, z: -1.00000012}
+      transformModified: 1
+    - name: Magistress L_Shoulderpad1
+      position: {x: -.115748785, y: .0149137685, z: .0103100585}
+      rotation: {x: .609722197, y: .307634681, z: -.15076229, w: .714752018}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Magistress L_Shoulderpad2
+      position: {x: -.113155849, y: .0158104133, z: .0134121701}
+      rotation: {x: .678025305, y: .0823690072, z: .100830764, w: .723415673}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000024}
+      transformModified: 1
+    - name: Magistress R Clavicle
+      position: {x: .0252949521, y: .0567680523, z: -.00712380232}
+      rotation: {x: .622106671, y: .105243877, z: .773719907, w: .0571361855}
+      scale: {x: 1, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Magistress CollarR
+      position: {x: -.0680169314, y: .0117589571, z: -.0537599176}
+      rotation: {x: -.403078288, y: -.538883924, z: -.402896047, w: .620328009}
+      scale: {x: 1.00000024, y: .999999702, z: 1.00000012}
+      transformModified: 1
+    - name: Magistress R UpperArm
+      position: {x: -.152388617, y: 0, z: -1.52587887e-07}
+      rotation: {x: .030051589, y: -.0833876282, z: .122346409, w: .988521516}
+      scale: {x: .999999821, y: .999999821, z: 1}
+      transformModified: 1
+    - name: Magistress R Forearm
+      position: {x: -.251191944, y: -4.76837148e-09, z: 0}
+      rotation: {x: -9.3111141e-10, y: -1.98298634e-11, z: .0212921537, w: .999773324}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress R Hand
+      position: {x: -.253973067, y: 0, z: 0}
+      rotation: {x: .726137221, y: .00490846345, z: -.0232093893, w: .687140524}
+      scale: {x: .99999994, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Magistress R Finger0
+      position: {x: -.0167541504, y: .0108642578, z: .0226005558}
+      rotation: {x: -.639520943, y: .321561843, z: .195449591, w: .670380831}
+      scale: {x: 1.00000012, y: .999999821, z: .99999994}
+      transformModified: 1
+    - name: Magistress R Finger01
+      position: {x: -.0385214984, y: 0, z: -3.81469718e-08}
+      rotation: {x: -1.19209261e-07, y: -1.86264469e-06, z: -.0361135826, w: .999347746}
+      scale: {x: 1.00000024, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: Magistress R Finger02
+      position: {x: -.034611281, y: 3.81469718e-08, z: -3.81469718e-08}
+      rotation: {x: -7.43067252e-09, y: 5.44310541e-10, z: -.0730561242, w: .997327864}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Magistress R Finger1
+      position: {x: -.0854965225, y: .00311614992, z: .0261679832}
+      rotation: {x: -.000771199528, y: .0351076163, z: -.0997703746, w: .994390666}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Magistress R Finger11
+      position: {x: -.0368197635, y: 0, z: 0}
+      rotation: {x: -6.79865124e-08, y: -1.21444407e-06, z: -.0392119437, w: .999230921}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress R Finger12
+      position: {x: -.0262898244, y: 7.62939436e-08, z: 4.76837148e-09}
+      rotation: {x: 1.84139415e-09, y: -2.80563073e-10, z: -.150626153, w: .988590837}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Magistress R Finger2
+      position: {x: -.0910237134, y: .00330368034, z: .00857761875}
+      rotation: {x: .00373446941, y: .0230056774, z: -.0963117108, w: .995078385}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress R Finger21
+      position: {x: -.0355164334, y: -3.81469718e-08, z: 4.76837148e-09}
+      rotation: {x: 2.75671283e-07, y: -3.98605778e-07, z: -.0340450965, w: .999420285}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress R Finger22
+      position: {x: -.0311390683, y: 3.81469718e-08, z: -2.38418574e-09}
+      rotation: {x: 9.29035571e-10, y: -6.52270113e-11, z: -.0700369701, w: .997544408}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress R Finger3
+      position: {x: -.0887293965, y: .00612274138, z: -.0105617512}
+      rotation: {x: .0653741658, y: .00994120352, z: -.091398716, w: .993616462}
+      scale: {x: .99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress R Finger31
+      position: {x: -.0353506468, y: 3.81469718e-08, z: -2.38418574e-09}
+      rotation: {x: -3.72528888e-08, y: -6.27711188e-07, z: -.0328623913, w: .999459922}
+      scale: {x: .99999994, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: Magistress R Finger32
+      position: {x: -.0257897172, y: 0, z: 1.07288356e-08}
+      rotation: {x: -8.68443539e-09, y: 3.86621568e-10, z: -.177859649, w: .984055877}
+      scale: {x: .99999994, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Magistress R Finger4
+      position: {x: -.0821905509, y: .0114003755, z: -.0284315087}
+      rotation: {x: .110067964, y: -.00345372385, z: -.0847030506, w: .990302265}
+      scale: {x: .999999881, y: .999999881, z: .99999994}
+      transformModified: 1
+    - name: Magistress R Finger41
+      position: {x: -.030741347, y: 3.81469718e-08, z: -1.43051144e-08}
+      rotation: {x: -5.21540464e-08, y: -3.68687182e-07, z: -.0327600166, w: .99946332}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Magistress R Finger42
+      position: {x: -.0223763268, y: -3.81469718e-08, z: 9.53674295e-09}
+      rotation: {x: 1.99318695e-08, y: -5.09834885e-09, z: -.159080878, w: .987265587}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress R_Arm_Armor1
+      position: {x: -.0582047254, y: .00336865429, z: -.0189015195}
+      rotation: {x: -.118045561, y: .697182834, z: .697184801, w: .118045293}
+      scale: {x: -.999999881, y: -.99999994, z: -1}
+      transformModified: 1
+    - name: Magistress R_Arm_Armor2
+      position: {x: -.0155827329, y: .00575573416, z: -.030798262}
+      rotation: {x: -.142431319, y: .692612529, z: .692614377, w: .142430902}
+      scale: {x: -.99999994, y: -1, z: -1}
+      transformModified: 1
+    - name: Magistress R_Shoulderpad1
+      position: {x: -.115748778, y: .0149137489, z: -.0103100585}
+      rotation: {x: -.609724164, y: -.307634294, z: -.150763154, w: .71475035}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Magistress R_Shoulderpad2
+      position: {x: -.113155857, y: .0158103947, z: -.0134121701}
+      rotation: {x: -.678027332, y: -.0823692977, z: .100830555, w: .723413825}
+      scale: {x: 1, y: .99999994, z: 1.00000012}
+      transformModified: 1
+    - name: Magistress Waist_Armor1
+      position: {x: -.0803471357, y: -.010036326, z: -.158164084}
+      rotation: {x: -.177171409, y: .684551716, z: -.684550524, w: -.177172124}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Magistress Waist_Armor2
+      position: {x: -.00457122782, y: .0219253544, z: -3.20672996e-07}
+      rotation: {x: 1.06923049e-13, y: -7.88535015e-09, z: .00284298882, w: .999995947}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Point001
+      position: {x: -7.62939436e-08, y: 1.63591003, z: -.0402978994}
+      rotation: {x: -.521116853, y: .477950245, z: .521117508, w: -.477951169}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,379 @@
+fileFormatVersion: 2
+guid: 465a8c4e681b2ee489d93959649ffa48
+timeCreated: 1455353185
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Magistress
+    100002: Magistress Belt1_main_pos
+    100004: Magistress Belt1_rotate
+    100006: Magistress Belt2
+    100008: Magistress Belt2_main_pos
+    100010: Magistress BreastL
+    100012: Magistress BreastR
+    100014: Magistress Brow1L
+    100016: Magistress Brow1R
+    100018: Magistress CollarL
+    100020: Magistress CollarR
+    100022: Magistress Drape
+    100024: Magistress Drape02
+    100026: Magistress Drape03
+    100028: Magistress EyeL
+    100030: Magistress EyelidBotL
+    100032: Magistress EyelidBotR
+    100034: Magistress EyelidTopL
+    100036: Magistress EyelidTopR
+    100038: Magistress EyeR
+    100040: Magistress Hair1
+    100042: Magistress Hair102
+    100044: Magistress Hair2
+    100046: Magistress Head
+    100048: Magistress Jaw
+    100050: Magistress L Calf
+    100052: Magistress L Clavicle
+    100054: Magistress L Finger0
+    100056: Magistress L Finger01
+    100058: Magistress L Finger02
+    100060: Magistress L Finger1
+    100062: Magistress L Finger11
+    100064: Magistress L Finger12
+    100066: Magistress L Finger2
+    100068: Magistress L Finger21
+    100070: Magistress L Finger22
+    100072: Magistress L Finger3
+    100074: Magistress L Finger31
+    100076: Magistress L Finger32
+    100078: Magistress L Finger4
+    100080: Magistress L Finger41
+    100082: Magistress L Finger42
+    100084: Magistress L Foot
+    100086: Magistress L Forearm
+    100088: Magistress L Hand
+    100090: Magistress L Thigh
+    100092: Magistress L Toe0
+    100094: Magistress L Toe01
+    100096: Magistress L UpperArm
+    100098: Magistress L_Arm_Armor1
+    100100: Magistress L_Arm_Armor2
+    100102: Magistress L_Shoulderpad1
+    100104: Magistress L_Shoulderpad2
+    100106: Magistress Neck
+    100108: Magistress Pelvis
+    100110: Magistress R Calf
+    100112: Magistress R Clavicle
+    100114: Magistress R Finger0
+    100116: Magistress R Finger01
+    100118: Magistress R Finger02
+    100120: Magistress R Finger1
+    100122: Magistress R Finger11
+    100124: Magistress R Finger12
+    100126: Magistress R Finger2
+    100128: Magistress R Finger21
+    100130: Magistress R Finger22
+    100132: Magistress R Finger3
+    100134: Magistress R Finger31
+    100136: Magistress R Finger32
+    100138: Magistress R Finger4
+    100140: Magistress R Finger41
+    100142: Magistress R Finger42
+    100144: Magistress R Foot
+    100146: Magistress R Forearm
+    100148: Magistress R Hand
+    100150: Magistress R Thigh
+    100152: Magistress R Toe0
+    100154: Magistress R Toe01
+    100156: Magistress R UpperArm
+    100158: Magistress R_Arm_Armor1
+    100160: Magistress R_Arm_Armor2
+    100162: Magistress R_Shoulderpad1
+    100164: Magistress R_Shoulderpad2
+    100166: Magistress Skirt
+    100168: Magistress Skirt02
+    100170: Magistress Skirt03
+    100172: Magistress Skirt04
+    100174: Magistress SkirtL
+    100176: Magistress SkirtL02
+    100178: Magistress SkirtR
+    100180: Magistress SkirtR02
+    100182: Magistress Spine
+    100184: Magistress Spine1
+    100186: Magistress Spine2
+    100188: Magistress Spine3
+    100190: Magistress Waist_Armor1
+    100192: Magistress Waist_Armor2
+    100194: //RootNode
+    100196: Magistress_Belt_geo
+    100198: Magistress_body_geo
+    100200: Magistress_Buckle_geo
+    100202: Magistress_Collar1_geo
+    100204: Magistress_Collar2_geo
+    100206: Magistress_Drape_geo
+    100208: Magistress_hair_geo
+    100210: Magistress_L_Armpad1_geo
+    100212: Magistress_L_Armpad2_geo
+    100214: Magistress_L_Boor_geo
+    100216: Magistress_L_Boot1_geo
+    100218: Magistress_L_Glove1_geo
+    100220: Magistress_L_Glove_geo
+    100222: Magistress_L_Shldr_buckle_geo
+    100224: Magistress_L_Shoulderpad1_geo
+    100226: Magistress_L_Shoulderpad2_geo
+    100228: Magistress_R_Armpad1_geo
+    100230: Magistress_R_Armpad2_geo
+    100232: Magistress_R_Boot1_geo
+    100234: Magistress_R_Boot_geo
+    100236: Magistress_R_Glove1_geo
+    100238: Magistress_R_Glove_geo
+    100240: Magistress_R_Shldr_buckle_geo
+    100242: Magistress_R_Shoulderpad1_geo
+    100244: Magistress_R_Shoulderpad2_geo
+    100246: Magistress_Skirt_geo
+    100248: Magistress_Waistarmor1_geo
+    100250: Magistress_Waistarmor2_geo
+    400000: Magistress
+    400002: Magistress Belt1_main_pos
+    400004: Magistress Belt1_rotate
+    400006: Magistress Belt2
+    400008: Magistress Belt2_main_pos
+    400010: Magistress BreastL
+    400012: Magistress BreastR
+    400014: Magistress Brow1L
+    400016: Magistress Brow1R
+    400018: Magistress CollarL
+    400020: Magistress CollarR
+    400022: Magistress Drape
+    400024: Magistress Drape02
+    400026: Magistress Drape03
+    400028: Magistress EyeL
+    400030: Magistress EyelidBotL
+    400032: Magistress EyelidBotR
+    400034: Magistress EyelidTopL
+    400036: Magistress EyelidTopR
+    400038: Magistress EyeR
+    400040: Magistress Hair1
+    400042: Magistress Hair102
+    400044: Magistress Hair2
+    400046: Magistress Head
+    400048: Magistress Jaw
+    400050: Magistress L Calf
+    400052: Magistress L Clavicle
+    400054: Magistress L Finger0
+    400056: Magistress L Finger01
+    400058: Magistress L Finger02
+    400060: Magistress L Finger1
+    400062: Magistress L Finger11
+    400064: Magistress L Finger12
+    400066: Magistress L Finger2
+    400068: Magistress L Finger21
+    400070: Magistress L Finger22
+    400072: Magistress L Finger3
+    400074: Magistress L Finger31
+    400076: Magistress L Finger32
+    400078: Magistress L Finger4
+    400080: Magistress L Finger41
+    400082: Magistress L Finger42
+    400084: Magistress L Foot
+    400086: Magistress L Forearm
+    400088: Magistress L Hand
+    400090: Magistress L Thigh
+    400092: Magistress L Toe0
+    400094: Magistress L Toe01
+    400096: Magistress L UpperArm
+    400098: Magistress L_Arm_Armor1
+    400100: Magistress L_Arm_Armor2
+    400102: Magistress L_Shoulderpad1
+    400104: Magistress L_Shoulderpad2
+    400106: Magistress Neck
+    400108: Magistress Pelvis
+    400110: Magistress R Calf
+    400112: Magistress R Clavicle
+    400114: Magistress R Finger0
+    400116: Magistress R Finger01
+    400118: Magistress R Finger02
+    400120: Magistress R Finger1
+    400122: Magistress R Finger11
+    400124: Magistress R Finger12
+    400126: Magistress R Finger2
+    400128: Magistress R Finger21
+    400130: Magistress R Finger22
+    400132: Magistress R Finger3
+    400134: Magistress R Finger31
+    400136: Magistress R Finger32
+    400138: Magistress R Finger4
+    400140: Magistress R Finger41
+    400142: Magistress R Finger42
+    400144: Magistress R Foot
+    400146: Magistress R Forearm
+    400148: Magistress R Hand
+    400150: Magistress R Thigh
+    400152: Magistress R Toe0
+    400154: Magistress R Toe01
+    400156: Magistress R UpperArm
+    400158: Magistress R_Arm_Armor1
+    400160: Magistress R_Arm_Armor2
+    400162: Magistress R_Shoulderpad1
+    400164: Magistress R_Shoulderpad2
+    400166: Magistress Skirt
+    400168: Magistress Skirt02
+    400170: Magistress Skirt03
+    400172: Magistress Skirt04
+    400174: Magistress SkirtL
+    400176: Magistress SkirtL02
+    400178: Magistress SkirtR
+    400180: Magistress SkirtR02
+    400182: Magistress Spine
+    400184: Magistress Spine1
+    400186: Magistress Spine2
+    400188: Magistress Spine3
+    400190: Magistress Waist_Armor1
+    400192: Magistress Waist_Armor2
+    400194: //RootNode
+    400196: Magistress_Belt_geo
+    400198: Magistress_body_geo
+    400200: Magistress_Buckle_geo
+    400202: Magistress_Collar1_geo
+    400204: Magistress_Collar2_geo
+    400206: Magistress_Drape_geo
+    400208: Magistress_hair_geo
+    400210: Magistress_L_Armpad1_geo
+    400212: Magistress_L_Armpad2_geo
+    400214: Magistress_L_Boor_geo
+    400216: Magistress_L_Boot1_geo
+    400218: Magistress_L_Glove1_geo
+    400220: Magistress_L_Glove_geo
+    400222: Magistress_L_Shldr_buckle_geo
+    400224: Magistress_L_Shoulderpad1_geo
+    400226: Magistress_L_Shoulderpad2_geo
+    400228: Magistress_R_Armpad1_geo
+    400230: Magistress_R_Armpad2_geo
+    400232: Magistress_R_Boot1_geo
+    400234: Magistress_R_Boot_geo
+    400236: Magistress_R_Glove1_geo
+    400238: Magistress_R_Glove_geo
+    400240: Magistress_R_Shldr_buckle_geo
+    400242: Magistress_R_Shoulderpad1_geo
+    400244: Magistress_R_Shoulderpad2_geo
+    400246: Magistress_Skirt_geo
+    400248: Magistress_Waistarmor1_geo
+    400250: Magistress_Waistarmor2_geo
+    4300000: Magistress_R_Shoulderpad1_geo
+    4300002: Magistress_R_Shoulderpad2_geo
+    4300004: Magistress_L_Shoulderpad1_geo
+    4300006: Magistress_L_Shoulderpad2_geo
+    4300008: Magistress_L_Shldr_buckle_geo
+    4300010: Magistress_R_Shldr_buckle_geo
+    4300012: Magistress_L_Armpad2_geo
+    4300014: Magistress_L_Armpad1_geo
+    4300016: Magistress_R_Armpad2_geo
+    4300018: Magistress_R_Armpad1_geo
+    4300020: Magistress_Collar2_geo
+    4300022: Magistress_R_Glove_geo
+    4300024: Magistress_R_Glove1_geo
+    4300026: Magistress_L_Glove_geo
+    4300028: Magistress_L_Glove1_geo
+    4300030: Magistress_Belt_geo
+    4300032: Magistress_Skirt_geo
+    4300034: Magistress_Drape_geo
+    4300036: Magistress_Waistarmor2_geo
+    4300038: Magistress_Buckle_geo
+    4300040: Magistress_Waistarmor1_geo
+    4300042: Magistress_R_Boot1_geo
+    4300044: Magistress_R_Boot_geo
+    4300046: Magistress_L_Boot1_geo
+    4300048: Magistress_L_Boor_geo
+    4300050: Magistress_hair_geo
+    4300052: Magistress_Collar1_geo
+    4300054: Magistress_body_geo
+    7400000: magistress_separate_2012
+    9500000: //RootNode
+    13700000: Magistress_Belt_geo
+    13700002: Magistress_body_geo
+    13700004: Magistress_Buckle_geo
+    13700006: Magistress_Collar1_geo
+    13700008: Magistress_Collar2_geo
+    13700010: Magistress_Drape_geo
+    13700012: Magistress_hair_geo
+    13700014: Magistress_L_Armpad1_geo
+    13700016: Magistress_L_Armpad2_geo
+    13700018: Magistress_L_Boor_geo
+    13700020: Magistress_L_Boot1_geo
+    13700022: Magistress_L_Glove1_geo
+    13700024: Magistress_L_Glove_geo
+    13700026: Magistress_L_Shldr_buckle_geo
+    13700028: Magistress_L_Shoulderpad1_geo
+    13700030: Magistress_L_Shoulderpad2_geo
+    13700032: Magistress_R_Armpad1_geo
+    13700034: Magistress_R_Armpad2_geo
+    13700036: Magistress_R_Boot1_geo
+    13700038: Magistress_R_Boot_geo
+    13700040: Magistress_R_Glove1_geo
+    13700042: Magistress_R_Glove_geo
+    13700044: Magistress_R_Shldr_buckle_geo
+    13700046: Magistress_R_Shoulderpad1_geo
+    13700048: Magistress_R_Shoulderpad2_geo
+    13700050: Magistress_Skirt_geo
+    13700052: Magistress_Waistarmor1_geo
+    13700054: Magistress_Waistarmor2_geo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
