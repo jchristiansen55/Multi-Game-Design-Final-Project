@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class KillSelf : MonoBehaviour {
 
-	public float timer;	
+	public float timer;
 
 	void Start () {
 		
