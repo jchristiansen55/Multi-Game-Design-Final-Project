@@ -23,12 +23,11 @@ public class Bullet : MonoBehaviour {
 			return;
 		}
 
-
-		Vector3 dir = target.position - transform.position;
-				
+		Vector3 dir = target.position - transform.position + new Vector3 (0, 2, 0);
 		float distanceThisFrame = speed * Time.deltaTime;
 
 		transform.Translate(dir.normalized * distanceThisFrame, Space.World);
+
 		transform.LookAt(target);
 
 	}
