@@ -13,7 +13,7 @@ public class JungleAttack : MonoBehaviour
     public GameObject firePoint;
 
     public float speed = 10f;
-
+    private Animator anim;
     public float aggroRange = 30f;
     public float range = 10f;
 
@@ -30,6 +30,7 @@ public class JungleAttack : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        anim = GetComponent<Animator>();
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
 
@@ -89,6 +90,7 @@ public class JungleAttack : MonoBehaviour
 
     void Shoot()
     {
+        anim.SetBool("shoot", true);
         targetEnemy.TakeDamage(damage);
 
         GameObject bulletGO = (GameObject)Instantiate(misslePrefab, firePoint.transform.position, firePoint.transform.rotation);
