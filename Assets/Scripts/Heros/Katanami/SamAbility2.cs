@@ -60,7 +60,7 @@ public class SamAbility2 : MonoBehaviour {
         }
         else
         {
-            GetComponent<Minions>().currentHealth += 20;
+            GetComponent<Minions>().currentHealth += 100;
         }
 		ab1Timer = ab2CDTime;
 		charFreezeCD = 2;

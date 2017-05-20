@@ -75,7 +75,7 @@ public class MageAutoAttack : MonoBehaviour {
 		_lookRotation = Quaternion.LookRotation(_direction);
 
 		mage.transform.rotation = _lookRotation;
-	
+
 		if (bullet != null)
         {
 			bullet.Seek (target);
