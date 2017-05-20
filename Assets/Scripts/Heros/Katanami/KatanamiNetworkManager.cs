@@ -28,14 +28,25 @@ public class KatanamiNetworkManager : Photon.MonoBehaviour {
 				this.transform.position = (Vector3) stream.ReceiveNext();
 				this.transform.rotation = (Quaternion) stream.ReceiveNext();
 			Animator Kat1 = Kat.GetComponentInChildren<Player> ().anim;
-			/**
-			Kat1.GetBool ("AutoAttacking") = (bool)stream.ReceiveNext ();
-			Kat1.GetBool("QCast")= (bool)stream.ReceiveNext ();
-			Kat1.GetBool("RCast")= (bool)stream.ReceiveNext ();
-			Kat1.GetBool("WCast")= (bool)stream.ReceiveNext ();
-			Kat1.GetBool("ECast")= (bool)stream.ReceiveNext ();
-			Kat1.GetBool("walk")= (bool)stream.ReceiveNext ();
-			*/
+			bool test;
+			bool test1;
+			bool test2;
+			bool test3;
+			bool test4; 
+			bool test5;
+			test = (bool)stream.ReceiveNext ();
+			Kat1.SetBool ("AutoAttacking", test); 
+			test1 = (bool)stream.ReceiveNext ();
+			Kat1.SetBool ("QCast", test1);
+			test2 = (bool)stream.ReceiveNext ();
+			Kat1.SetBool ("RCast", test2);
+			test3= (bool)stream.ReceiveNext ();
+			Kat1.SetBool ("WCast", test3); 
+			test4= (bool)stream.ReceiveNext ();
+			Kat1.SetBool ("ECast", test4);
+			test5 = (bool)stream.ReceiveNext ();
+			Kat1.SetBool ("walk", test5);
+								
 			}
 		}
 	}
