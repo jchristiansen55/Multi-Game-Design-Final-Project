@@ -8,6 +8,8 @@ public class MinionAttackRedCaster : MonoBehaviour
     private Minions targetEnemy;
 
     public float speed = 10f;
+	public GameObject ability;
+	public GameObject Firepoint;
 
     private Transform wayp;
     public int wavepointIndex = 2;
@@ -120,7 +122,15 @@ public class MinionAttackRedCaster : MonoBehaviour
         ScoreManager.blueValue += 17;
     }
     void Shoot()
-    {
+	{
+		GameObject bulletGO = Instantiate(ability, Firepoint.transform.position, Firepoint.transform.rotation);
+		Bullet bullet = bulletGO.GetComponent<Bullet>();
+
+		if (bullet != null)
+		{
+			bullet.Seek (target);
+		}
+
         anim.SetBool("shoot", true);
         targetEnemy.TakeDamage(damage);
         Debug.Log("DMG'D MINION");

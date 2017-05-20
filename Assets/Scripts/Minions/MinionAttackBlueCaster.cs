@@ -6,6 +6,8 @@ public class MinionAttackBlueCaster : MonoBehaviour
 
     public Transform target;
     private Minions targetEnemy;
+	public GameObject Firepoint;
+	public GameObject ability; 
 
     public float speed = 10f;
 
@@ -124,6 +126,15 @@ public class MinionAttackBlueCaster : MonoBehaviour
     }
     void Shoot()
     {
+		GameObject bulletGO = Instantiate(ability, Firepoint.transform.position, Firepoint.transform.rotation);
+		Bullet bullet = bulletGO.GetComponent<Bullet>();
+
+		if (bullet != null)
+		{
+			bullet.Seek (target);
+		}
+
+
         anim.SetBool("shoot", true);
         targetEnemy.TakeDamage(damage);
         Debug.Log("DMG'D MINION");
