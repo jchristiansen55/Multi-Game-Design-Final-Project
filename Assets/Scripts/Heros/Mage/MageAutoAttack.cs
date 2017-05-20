@@ -51,7 +51,7 @@ public class MageAutoAttack : MonoBehaviour {
 
 			minionsTakeDamage = hit.transform.gameObject;
 			target = minionsTakeDamage.transform;
-			target.transform.position = target.transform.position + new Vector3 (0, 1, 0);
+		
 
 			distance = Vector3.Distance (mage.transform.position, hit.transform.position); 
 
@@ -59,7 +59,6 @@ public class MageAutoAttack : MonoBehaviour {
 				
 				Instantiate (ability, minionsTakeDamage.transform.position , Quaternion.identity);
 				AbilityOne ();
-
 				
 				AutoAnimation = true;
 			
