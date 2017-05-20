@@ -59,8 +59,10 @@ public class MinionAttackRedCaster : MonoBehaviour
                 kill = true;
                 aggro = false;
             }
-        }
-        else
+        } else if (nearestEnemy != null && shortestDistance >= aggroRange*2) {
+            walk = true;
+            aggro = false;
+        } else
         {
             target = null;
             walk = true;

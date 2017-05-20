@@ -60,6 +60,11 @@ public class MinionAttackBlueCaster : MonoBehaviour
                 aggro = false;
             }
         }
+        else if (nearestEnemy != null && shortestDistance >= aggroRange * 2)
+        {
+            walk = true;
+            aggro = false;
+        }
         else
         {
             target = null;
