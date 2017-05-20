@@ -4,6 +4,7 @@ using UnityEngine;
 using Photon;
 
 public class MageNetworkManager : Photon.MonoBehaviour {
+	public GameObject Char; 
 		public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
 		{
 			if (stream.isWriting)
@@ -11,6 +12,11 @@ public class MageNetworkManager : Photon.MonoBehaviour {
 				// We own this player: send the others our data
 				stream.SendNext(transform.position);
 				stream.SendNext(transform.rotation);
+			Animator mage = Char.GetComponentInChildren<MageAnimator> ().m_animator;
+			stream.SendNext ((bool) mage.GetBool("AutoAttacking"));
+			stream.SendNext ((bool) mage.GetBool("IsRunning"));
+			stream.SendNext ((bool) mage.GetBool("CastingQ"));
+						
 			}
 			else
 			{

@@ -77,6 +77,15 @@ public class GameManager : Photon.MonoBehaviour {
 			camera.enabled = true;
 			
 			userPlayer1.GetComponent<SendInfo>().enabled = true;
+			
+		var scriptMage = userPlayer1.GetComponentInChildren<MageAnimator> ();
+		var scriptKat = userPlayer1.GetComponentInChildren<Player> ();
+		if ( scriptMage!=null ) {
+			userPlayer1.GetComponentInChildren<MageAnimator> ().enabled = true;
+		}
+		if ( scriptKat!=null ) {
+			userPlayer1.GetComponentInChildren<Player> ().enabled = true;
+		}
 			//counterPlus (spawnCounter);
 		//}
 		/**else {

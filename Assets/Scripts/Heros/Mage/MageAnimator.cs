@@ -6,7 +6,7 @@ public class MageAnimator : MonoBehaviour {
 
 	bool isTrue;
 
-	Animator m_animator; 
+	public Animator m_animator; 
 
 
 	void Start () {
@@ -23,7 +23,6 @@ public class MageAnimator : MonoBehaviour {
 			RM.GetComponent<MageAbility2> ().isTeleporting = false; 
 		}
 		*/
-
 		// Auto Attack animation
 		m_animator.SetBool ("AutoAttacking",RM.GetComponent<MageAutoAttack>().AutoAnimation);
 		if (RM.GetComponent<MageAutoAttack> ().AutoAnimation == true) {
