@@ -23,6 +23,16 @@ public class MageNetworkManager : Photon.MonoBehaviour {
 				// Network player, receive data
 				this.transform.position = (Vector3) stream.ReceiveNext();
 				this.transform.rotation = (Quaternion) stream.ReceiveNext();
+			Animator mage = Char.GetComponentInChildren<MageAnimator> ().m_animator;
+			bool test;
+			bool test1;
+			bool test2;
+			test = (bool)stream.ReceiveNext ();
+			mage.SetBool ("AutoAttacking", test); 
+			test1 = (bool)stream.ReceiveNext ();
+			mage.SetBool ("IsRunning", test1); 
+			test2 = (bool)stream.ReceiveNext ();
+			mage.SetBool ("CastingQ", test2); 
 			}
 		}
 	}
