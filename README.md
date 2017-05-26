@@ -1,9 +1,35 @@
-#Final Project - Title //TODO
-Detailed Description (Add pictures/videos by Demo day) //todo
+#Final Project - MOBA
+
+Short Version Trailer-
+Long version trailer (used on demo day)- https://www.youtube.com/watch?v=r_hg_PNIEz4&feature=youtu.be
+Gameplay video- https://www.youtube.com/watch?v=e_-bgeHf-W4&feature=youtu.be
+Game Features:
+
+Huge MOBA sized map
+* Uses Unity's new UI system
+* Players, Monsters, NPCs
+* Jungle Creeps
+* Towers, Barracks, Bases
+* Movement via Navigation
+* Animations via Mecanim
+* Beautiful 3D Models
+* Top, Middle, Bottom Lanes
+* Team based Health Bars
+* Skills & Buffs, AoE Skills
+* Hero Selection
+* Weighted NavMesh Areas for Monster AI
+* PVP - WORKING MULTIPLAYER
+* Photon lobby and matchmaking
+* Death and Respawning
+* Minion attacks and aninmations
+* 2 playable characters- 4 spells each, all coded, animated and different sound effects
+* turret attacks and animations
+* third person camera- with click to move
+* autoattack on right click
+* champion select camera
 
 ##Due 04/08:
-Prepare This Readme. 
-//TODO
+
 
 * Decide on the Idea.
 	Creature based MOBA 
