@@ -6,7 +6,8 @@ public class MageAbility1 : MonoBehaviour {
 
 	public GameObject ChanneledAbility;
 	public GameObject Firepoint;
-
+	public GameObject mageChild;
+	public GameObject mageParent;
 		   GameObject ability;
 		   GameObject minionsTakeDamage; 
 
@@ -53,6 +54,8 @@ public class MageAbility1 : MonoBehaviour {
 	void AbilityOne(){
         float vol = Random.Range(volumeLow, volumeHigh);
         source.PlayOneShot(mage1sound, vol);
+
+		mageChild.transform.position = mageParent.transform.position;
 
         ability = Instantiate(ChanneledAbility, Firepoint.transform.position, Firepoint.transform.rotation);
 				ab1Timer = ab1CDTime;

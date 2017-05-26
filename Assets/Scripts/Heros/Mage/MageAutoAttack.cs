@@ -8,6 +8,7 @@ public class MageAutoAttack : MonoBehaviour {
 	public GameObject ability;
 	public GameObject Firepoint;
 	public GameObject mage;
+	public GameObject ParentMage;
 
 	 Transform target = null; 
 
@@ -75,6 +76,7 @@ public class MageAutoAttack : MonoBehaviour {
 		_lookRotation = Quaternion.LookRotation(_direction);
 
 		mage.transform.rotation = _lookRotation;
+		mage.transform.position = ParentMage.transform.position;
 
 		if (bullet != null)
         {
@@ -85,7 +87,7 @@ public class MageAutoAttack : MonoBehaviour {
 
 
 		ab1Timer = ab1CDTime;
-		charFreezeCD = 2;
+		charFreezeCD = 3;
 		minionsTakeDamage.GetComponent<Minions> ().TakeDamage(damagePerAttack);
 	}
 }
